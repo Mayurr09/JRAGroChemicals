@@ -1,0 +1,253 @@
+{
+  "project_info": {
+    "name": "JR Agro Chemicals",
+    "tagline": "Nourishing Nature. Enriching Lives. / Success Your Dream With Us",
+    "location": "Sangli, Maharashtra, India",
+    "app_type": "Marketing Site & Agricultural Product Catalogue (Hybrid)",
+    "target_audience": "Farmers, Agricultural Dealers, Agronomists, Farming Co-operatives across Maharashtra & Pan India"
+  },
+  "design_archetype": {
+    "name": "Organic Luxury & Swiss Agricultural Precision",
+    "description": "Combines rich dark forest green textures, warm earthy golden highlights, clean editorial typography, and high-density data grids to convey trust, scientific rigour, and deep empathy for the farming community.",
+    "anti_patterns": [
+      "No generic AI purple/violet gradients",
+      "No Inter or Roboto as primary heading fonts",
+      "No standard Vercel dark mode or plain white templates",
+      "No fully transparent headers without backdrop blur",
+      "No empty placeholder URLs"
+    ]
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, Clash Display, serif",
+    "heading_font_import": "@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');",
+    "body_font": "'Plus Jakarta Sans', sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "hierarchy": {
+      "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.08]",
+      "section_title": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight leading-snug",
+      "subsection_title": "text-xl sm:text-2xl font-medium tracking-normal",
+      "card_heading": "text-lg sm:text-xl font-semibold",
+      "body_text": "text-base text-stone-700 dark:text-stone-300 leading-relaxed",
+      "small_label": "text-xs uppercase tracking-[0.2em] font-mono text-emerald-800 dark:text-emerald-400 font-semibold"
+    }
+  },
+  "colors": {
+    "theme_mode": "Light Default with Dark Forest accents and Dark Mode toggle",
+    "css_variables": {
+      "--background": "42 25% 97%",
+      "--foreground": "150 25% 10%",
+      "--card": "40 20% 99%",
+      "--card-foreground": "150 25% 10%",
+      "--popover": "40 20% 99%",
+      "--popover-foreground": "150 25% 10%",
+      "--primary": "161 64% 13%",
+      "--primary-foreground": "42 30% 96%",
+      "--secondary": "155 35% 92%",
+      "--secondary-foreground": "161 64% 13%",
+      "--muted": "40 15% 92%",
+      "--muted-foreground": "150 12% 40%",
+      "--accent": "43 65% 52%",
+      "--accent-foreground": "161 64% 10%",
+      "--border": "150 15% 86%",
+      "--input": "150 15% 86%",
+      "--ring": "161 64% 18%"
+    },
+    "palette_hex": {
+      "forest_dark": "#0A2F24",
+      "emerald_rich": "#104838",
+      "emerald_vibrant": "#059669",
+      "earth_gold": "#C59B27",
+      "warm_amber": "#D4AF37",
+      "cream_bg": "#FAF8F3",
+      "surface_sand": "#F3EFE6",
+      "soil_brown": "#4A3B2C",
+      "charcoal_text": "#161E1A"
+    }
+  },
+  "trilingual_support": {
+    "languages": ["EN", "HI", "MR"],
+    "default_language": "EN",
+    "dictionary_sample": {
+      "EN": {
+        "brand_name": "JR Agro Chemicals",
+        "tagline": "Nourishing Nature. Enriching Lives.",
+        "hero_title": "Growing Better. Growing Together.",
+        "hero_subtitle": "Pioneering eco-friendly bio-fertilizers, micronutrients, and crop yield enhancers engineered for Indian soil chemistry.",
+        "nav_about": "About Us",
+        "nav_products": "Product Catalogue",
+        "nav_solutions": "Crop Solutions",
+        "nav_dealers": "Find Dealer",
+        "nav_contact": "Contact Us",
+        "cta_enquire": "Quick Enquiry",
+        "cta_whatsapp": "Chat on WhatsApp",
+        "cta_find_dealer": "Locate Nearest Dealer"
+      },
+      "HI": {
+        "brand_name": "जेआर एग्रो केमिकल्स",
+        "tagline": "प्रकृति का पोषण। जीवन में समृद्धि।",
+        "hero_title": "बेहतर फसल। समृद्ध किसान।",
+        "hero_subtitle": "भारतीय मिट्टी के लिए तैयार उच्च गुणवत्ता वाले जैविक उर्वरक, सूक्ष्म पोषक तत्व और फसल सुरक्षा समाधान।",
+        "nav_about": "हमारे बारे में",
+        "nav_products": "उत्पाद सूची",
+        "nav_solutions": "फसल समाधान",
+        "nav_dealers": "डीलर खोजें",
+        "nav_contact": "संपर्क करें",
+        "cta_enquire": "पूछताछ करें",
+        "cta_whatsapp": "व्हाट्सएप पर बात करें",
+        "cta_find_dealer": "नजदीकी डीलर खोजें"
+      },
+      "MR": {
+        "brand_name": "जेआर ॲग्रो केमिकल्स",
+        "tagline": "निसर्गाचे पोषण. समृद्ध जीवन.",
+        "hero_title": "उज्वल शेती. समृद्ध शेतकरी.",
+        "hero_subtitle": "महाराष्ट्रातील मातीच्या पोत सुधारण्यासाठी विशेष बायो-फर्टिलायझर्स, सूक्ष्म अन्नद्रव्ये व पीक संरक्षण उत्पादने.",
+        "nav_about": "आमच्याबद्दल",
+        "nav_products": "उत्पादने",
+        "nav_solutions": "पीक सल्ला",
+        "nav_dealers": "डीलर शोधा",
+        "nav_contact": "संपर्क",
+        "cta_enquire": "चौकशी करा",
+        "cta_whatsapp": "व्हॉट्सॲपवर संपर्क करा",
+        "cta_find_dealer": "जवळचा डीलर शोधा"
+      }
+    }
+  },
+  "layout_sections": [
+    {
+      "section_id": "intro_splash",
+      "name": "Full-Screen Opening Animation",
+      "description": "An immersive agricultural landscape background overlay with logo reveal, Maharashtra wheat field silhouette, gold shimmer tagline reveal, and 'Skip Intro' option. Automatically fades out after 3.5 seconds or on skip click."
+    },
+    {
+      "section_id": "header",
+      "name": "Sticky Glassmorphism Header",
+      "description": "Blurred glass navigation bar (backdrop-blur-md bg-stone-900/85 or bg-cream-50/90) with JR Agro brand mark, EN/HI/MR language toggle, navigation links, quick call CTA, and dark mode switcher."
+    },
+    {
+      "section_id": "hero",
+      "name": "Kinetic Typography Hero",
+      "description": "Masked line reveal with 'Growing Better. Growing Together.', high-definition Indian farmland backdrop, live yield impact counter metrics (+35% Crop Yield, 120,000+ Farmers Served, 15+ Maharashtra Districts), and primary CTA buttons."
+    },
+    {
+      "section_id": "editorial_marquee",
+      "name": "Living Editorial Ribbon",
+      "description": "Slowly drifting ribbon displaying key values: ORGANIC BIO-ENRICHER • MICRONUTRIENT SPECIALISTS • SOIL REJUVENATION • SANGLI MAHARASHTRA • TRUSTED BY 120K+ FARMERS • CERTIFIED QUALITY"
+    },
+    {
+      "section_id": "about_us",
+      "name": "About Us & Values Bento Grid",
+      "description": "Asymmetric Bento grid showcasing JR Agro's legacy in Sangli, state-of-the-art laboratory testing, eco-sustainability, and farmer prosperity focus with rich photographic backgrounds."
+    },
+    {
+      "section_id": "product_catalogue",
+      "name": "Categorized Product Catalogue & Interactive Modal",
+      "description": "Filter tabs (Bio-Fertilizers, Micronutrients, Water Soluble NPK, Soil Conditioners, Plant Growth Regulators), search bar, detailed product cards (composition, crop compatibility, dosage, benefits), product detail popup modal with WhatsApp order button."
+    },
+    {
+      "section_id": "crop_solutions",
+      "name": "Agricultural Crop Solutions & Calculator",
+      "description": "Crop-specific nutrient schedules for Sugarcane, Grapes, Pomegranate, Wheat, Cotton, and Vegetables, alongside a Dosage & Soil Health Calculator."
+    },
+    {
+      "section_id": "why_choose_us",
+      "name": "Why Choose Us",
+      "description": "4-column feature section with custom icon badges highlighting Soil Chemistry Science, Instant Water Solubility, Eco-friendly Zero Residue, and Direct Field Agronomist Support."
+    },
+    {
+      "section_id": "farmer_section",
+      "name": "Emotional Farmer Stories & Voice of Maharashtra",
+      "description": "Heartfelt farmer spotlight with photos from Sangli, Kolhapur, and Satara districts, detailing before-and-after harvest improvements."
+    },
+    {
+      "section_id": "certifications",
+      "name": "Certifications & Quality Badges",
+      "description": "ISO 9001:2015, Organic Standard Certification, Govt. Approved R&D Lab, ICAR Compliant Badges with hover shimmer effect."
+    },
+    {
+      "section_id": "find_dealer",
+      "name": "Dealer Locator & Regional Hubs",
+      "description": "Interactive district filter (Sangli, Satara, Kolhapur, Solapur, Pune, Nashik) with dealer shop names, phone numbers, addresses, and instant 'Get Directions' / WhatsApp inquiry."
+    },
+    {
+      "section_id": "enquiry_contact",
+      "name": "Enquiry Form & Location Map",
+      "description": "Trilingual enquiry form with crop select dropdown, direct phone/WhatsApp details, and embedded Google Maps view of MIDC Kupwad, Sangli, Maharashtra."
+    },
+    {
+      "section_id": "faq_accordion",
+      "name": "FAQ Accordion",
+      "description": "Collapsible accordion addressing common farmer queries regarding application dosage, mixing compatibility, organic certification, and bulk dealer ordering."
+    },
+    {
+      "section_id": "footer",
+      "name": "Grand Agriculture Footer",
+      "description": "Rich dark green footer with massive stylized brand mark ('JR AGRO'), language switcher, quick links, emergency agronomist hotline, and copyright."
+    }
+  ],
+  "image_urls": {
+    "hero_farmland_bg": "https://images.unsplash.com/photo-1647879826700-cfc5fd9d9a31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxsdXNoJTIwZ3JlZW4lMjBJbmRpYW4lMjBmYXJtbGFuZCUyMHdoZWF0JTIwcmljZSUyMGZpZWxkcyUyMGFncmljdWx0dXJlfGVufDB8fHx8MTc5MDY2NjQ4OHww&ixlib=rb-4.1.0&q=85",
+    "farmer_hero_portrait": "https://images.unsplash.com/photo-1673538064388-21d1aaaf6594?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBmYXJtbGVyJTIwYWdyaWN1bHR1cmFsJTIwZmllbGQlMjBjcm9wcyUyMHN1bnNldHxlbnwwfHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85",
+    "traditional_farming": "https://images.unsplash.com/photo-1620901433789-1d2f85a93653?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHxfenR8ZW58MHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85",
+    "farmer_in_fields": "https://images.unsplash.com/photo-1607892408220-c80c0f8651d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85",
+    "farmer_cycling_fields": "https://images.unsplash.com/photo-1738992765917-15d0b7d36683?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85",
+    "endless_green_crops": "https://images.unsplash.com/photo-1621394988863-117a9fc6e77f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHxfenR8ZW58MHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85",
+    "agricultural_lab_research": "https://images.unsplash.com/photo-1580982327559-c1202864eb05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxhZ3JpY3VsdHVyZSUyMGxhYm9yYXRvcnl8ZW58MHx8fDE3OTA2NjY0OTR8MA&ixlib=rb-4.1.0&q=85",
+    "soil_sprout_detail": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHxfenR8ZW58MHx8fDE3OTA2NjY0OTR8MA&ixlib=rb-4.1.0&q=85",
+    "aerial_sprayer_fields": "https://images.unsplash.com/photo-1627920769541-daa658ed6b59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMGxhYm9yYXRvcnl8ZW58MHx8fDE3OTA2NjY0OTR8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis smooth scroll or Framer Motion scroll container",
+    "scroll_reveals": "Staggered fade-up & scale-in using framer-motion with viewport={{ once: true, margin: '-50px' }}",
+    "text_reveal": "Masked overflow-hidden line slide-up animation for headlines",
+    "glassmorphism": "backdrop-blur-md bg-stone-900/80 border border-emerald-500/20 shadow-2xl"
+  },
+  "testing_requirements": {
+    "rule": "All interactive and key informational elements MUST include a data-testid attribute.",
+    "mandatory_test_ids": [
+      "splash-screen",
+      "skip-intro-button",
+      "language-selector-en",
+      "language-selector-hi",
+      "language-selector-mr",
+      "nav-logo",
+      "nav-link-about",
+      "nav-link-products",
+      "nav-link-solutions",
+      "nav-link-dealers",
+      "nav-link-contact",
+      "hero-title",
+      "hero-cta-catalogue",
+      "hero-cta-whatsapp",
+      "product-search-input",
+      "product-category-filter-all",
+      "product-category-filter-bio",
+      "product-category-filter-micronutrient",
+      "product-category-filter-watersoluble",
+      "product-card-1",
+      "product-detail-modal-trigger-1",
+      "product-modal-close-button",
+      "product-modal-whatsapp-enquiry",
+      "crop-solution-sugarcane",
+      "crop-solution-grapes",
+      "dosage-calculator-crop-select",
+      "dosage-calculator-acres-input",
+      "dealer-district-select",
+      "dealer-search-input",
+      "enquiry-form-name-input",
+      "enquiry-form-phone-input",
+      "enquiry-form-crop-select",
+      "enquiry-form-message-input",
+      "enquiry-form-submit-button",
+      "faq-accordion-item-1",
+      "whatsapp-floating-button"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Import Lucide icons or Heroicons for sleek UI indicators (Leaf, Droplets, Sun, Award, MapPin, Phone, MessageSquare, ShieldCheck, ChevronRight, Search, X).",
+    "Ensure the EN/HI/MR language switcher dynamically updates all section titles, buttons, tags, and form placeholders.",
+    "Build the product catalogue with realistic Indian agrochemical products (e.g. Bio-NPK Growth Enhancer, Zinc Chelated Micronutrient 12%, Humic Acid Soil Activator, Micro-Nutrient Mix Grade II, Plant Revitalizer Solution) with detailed composition and dosage specs.",
+    "Include direct WhatsApp link trigger formatted as `https://wa.me/919876543210?text=Hello%20JR%20Agro%20Chemicals,%20I%20am%20interested%20in...`",
+    "Integrate Sonner for smooth toast feedback when submitting enquiry forms or switching languages.",
+    "Apply all test attributes (`data-testid`) consistently as listed under testing_requirements."
+  ]
+}

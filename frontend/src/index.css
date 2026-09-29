@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 42 25% 97%;
+        --foreground: 150 25% 10%;
+        --card: 40 20% 99%;
+        --card-foreground: 150 25% 10%;
+        --popover: 40 20% 99%;
+        --popover-foreground: 150 25% 10%;
+        --primary: 161 64% 13%;
+        --primary-foreground: 42 30% 96%;
+        --secondary: 155 35% 92%;
+        --secondary-foreground: 161 64% 13%;
+        --muted: 40 15% 92%;
+        --muted-foreground: 150 12% 40%;
+        --accent: 43 65% 52%;
+        --accent-foreground: 161 64% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 150 15% 86%;
+        --input: 150 15% 86%;
+        --ring: 161 64% 18%;
+        --radius: 0.75rem;
+    }
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Plus Jakarta Sans', 'Tiro Devanagari Marathi', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: #C59B27;
+        color: #0A2F24;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit; margin-right: inherit; margin-top: inherit; margin-bottom: inherit;
+        padding-left: inherit; padding-right: inherit; padding-top: inherit; padding-bottom: inherit;
+        column-gap: inherit; row-gap: inherit; gap: inherit;
+        border-left-width: inherit; border-right-width: inherit; border-top-width: inherit; border-bottom-width: inherit;
+        border-left-style: inherit; border-right-style: inherit; border-top-style: inherit; border-bottom-style: inherit;
+        border-left-color: inherit; border-right-color: inherit; border-top-color: inherit; border-bottom-color: inherit;
+    }
+}
+
+@layer utilities {
+    .font-display {
+        font-family: 'Cormorant Garamond', 'Tiro Devanagari Marathi', serif;
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+    .grain::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    }
+}
+
+@keyframes marquee-drift {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: marquee-drift 46s linear infinite;
+}
+
+@keyframes leaf-sway {
+    0%, 100% { transform: rotate(-4deg) translateY(0); }
+    50% { transform: rotate(5deg) translateY(-8px); }
+}
+.animate-leaf {
+    animation: leaf-sway 7s ease-in-out infinite;
+}
+
+@keyframes granule-fall {
+    0% { transform: translateY(-10vh) scale(0.6); opacity: 0; }
+    15% { opacity: 0.85; }
+    100% { transform: translateY(105vh) scale(1); opacity: 0; }
+}
+.animate-granule {
+    animation: granule-fall linear infinite;
+}
+
+@keyframes light-sweep {
+    from { transform: translateX(-120%) skewX(-18deg); }
+    to { transform: translateX(240%) skewX(-18deg); }
+}
+.animate-sweep {
+    animation: light-sweep 2.4s ease-in-out 0.6s both;
+}
+
+.mask-line {
+    overflow: hidden;
+    display: block;
+}
+.mask-line > span {
+    display: block;
+}
