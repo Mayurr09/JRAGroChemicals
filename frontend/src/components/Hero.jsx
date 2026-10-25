@@ -7,7 +7,7 @@ import SectionLang from "@/components/SectionLang";
 import { SITE } from "@/config/site";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1647879826700-cfc5fd9d9a31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxsdXNoJTIwZ3JlZW4lMjBJbmRpYW4lMjBmYXJtbGFuZCUyMHdoZWF0JTIwcmljZSUyMGZpZWxkcyUyMGFncmljdWx0dXJlfGVufDB8fHx8MTc5MDY2NjQ4OHww&ixlib=rb-4.1.0&q=85";
+  "https://images.unsplash.com/photo-1673538064388-21d1aaaf6594?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBmYXJtZXIlMjBhZ3JpY3VsdHVyYWwlMjBmaWVsZCUyMGNyb3BzJTIwc3Vuc2V0fGVufDB8fHx8MTc5MDY2NjQ4OHww&ixlib=rb-4.1.0&q=85";
 
 export default function Hero() {
   const { t, tx } = useLanguage();
@@ -19,8 +19,8 @@ export default function Hero() {
   return (
     <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#0A2F24]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Lush green Indian farmland at sunrise" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24] via-[#0A2F24]/55 to-[#0A2F24]/25" />
+        <img src={HERO_IMG} alt="Misty green farmland at dawn" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24] via-[#0A2F24]/50 to-[#0A2F24]/25" />
       </motion.div>
 
       <SectionLang light />
