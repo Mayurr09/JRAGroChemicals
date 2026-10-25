@@ -6,7 +6,7 @@ import { MaskedLine } from "@/components/Reveal";
 import SectionLang from "@/components/SectionLang";
 
 const IMG =
-  "https://images.unsplash.com/photo-1607892408220-c80c0f8651d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fDE3OTA2NjY0ODh8MA&ixlib=rb-4.1.0&q=85";
+  "https://images.unsplash.com/photo-1624565019871-16a8d90ad749?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 export default function FarmerSection() {
   const { t } = useLanguage();
@@ -18,7 +18,7 @@ export default function FarmerSection() {
     <section ref={ref} className="relative overflow-hidden bg-[#0A2F24] py-28 sm:py-40">
       <SectionLang light />
       <motion.div style={{ y }} className="absolute inset-0 scale-125">
-        <img src={IMG} alt="Indian farmer standing in green field" loading="lazy" className="h-full w-full object-cover opacity-45" />
+        <img src={IMG} alt="Golden wheat crop close-up" loading="lazy" className="h-full w-full object-cover opacity-45" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A2F24]/90 via-[#0A2F24]/55 to-[#0A2F24]/30" />
       </motion.div>
 

@@ -7,35 +7,35 @@ import SectionLang from "@/components/SectionLang";
 import { SITE } from "@/config/site";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1673538064388-21d1aaaf6594?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBmYXJtZXIlMjBhZ3JpY3VsdHVyYWwlMjBmaWVsZCUyMGNyb3BzJTIwc3Vuc2V0fGVufDB8fHx8MTc5MDY2NjQ4OHww&ixlib=rb-4.1.0&q=85";
+  "https://images.unsplash.com/photo-1626606441167-bec3dfa06b31?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 export default function Hero() {
-  const { t, tx } = useLanguage();
+  const { t } = useLanguage();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
-    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#0A2F24]">
+    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#FAF8F3]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Misty green farmland at dawn" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24] via-[#0A2F24]/50 to-[#0A2F24]/25" />
+        <img src={HERO_IMG} alt="Soft golden wheat field under a calm morning sky" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F3] via-[#FAF8F3]/60 to-[#FAF8F3]/15" />
       </motion.div>
 
-      <SectionLang light />
-      <Leaf className="animate-leaf absolute right-[12%] top-[22%] hidden text-[#C59B27]/40 lg:block" size={64} />
-      <Leaf className="animate-leaf absolute left-[8%] top-[30%] hidden text-emerald-300/25 lg:block" size={44} style={{ animationDelay: "2s" }} />
+      <SectionLang />
+      <Leaf className="animate-leaf absolute right-[12%] top-[22%] hidden text-[#C59B27]/50 lg:block" size={64} />
+      <Leaf className="animate-leaf absolute left-[8%] top-[30%] hidden text-[#1E6B4A]/20 lg:block" size={44} style={{ animationDelay: "2s" }} />
 
       <motion.div style={{ opacity: fade }} className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-24 pt-40 sm:px-6">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#C59B27]/40 bg-[#0A2F24]/60 px-4 py-2 backdrop-blur-sm">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#0A2F24]/90 px-4 py-2 shadow-lg shadow-emerald-900/15 backdrop-blur-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-[#C59B27]" />
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-emerald-50/90">{t("hero.trust")}</span>
+          <span className="text-xs font-medium uppercase tracking-[0.18em] text-[#FAF8F3]/90">{t("hero.trust")}</span>
         </div>
 
-        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#FAF8F3]">
+        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#0A2F24]">
           <MaskedLine text={t("hero.title1")} delay={0.35} />
-          <span className="text-[#C59B27]">
+          <span className="text-[#A8821C]">
             <MaskedLine text={t("hero.title2")} delay={0.5} />
           </span>
         </h1>
@@ -44,7 +44,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="mt-6 max-w-xl text-base text-emerald-50/80 sm:text-lg"
+          className="mt-6 max-w-xl text-base text-emerald-950/70 sm:text-lg"
         >
           {t("hero.sub")}
         </motion.p>
@@ -58,7 +58,7 @@ export default function Hero() {
           <a
             data-testid="hero-cta-catalogue"
             href="#products"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#C59B27] px-7 py-3.5 text-sm font-bold text-[#0A2F24] transition-all hover:bg-[#D4AF37] hover:shadow-xl hover:shadow-[#C59B27]/30"
+            className="group inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-7 py-3.5 text-sm font-bold text-[#FAF8F3] transition-all hover:bg-[#1E6B4A] hover:shadow-xl hover:shadow-emerald-900/25"
           >
             {t("hero.cta1")}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
@@ -66,7 +66,7 @@ export default function Hero() {
           <a
             data-testid="hero-cta-contact"
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-emerald-100/30 px-7 py-3.5 text-sm font-semibold text-[#FAF8F3] backdrop-blur-sm transition-colors hover:border-[#C59B27] hover:text-[#C59B27]"
+            className="inline-flex items-center gap-2 rounded-full border border-[#C59B27] bg-white/60 px-7 py-3.5 text-sm font-semibold text-[#0A2F24] backdrop-blur-sm transition-colors hover:bg-[#C59B27] hover:text-[#0A2F24]"
           >
             <Phone size={16} />
             {t("hero.cta2")}
@@ -77,15 +77,15 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6 }}
-          className="mt-14 flex flex-col items-start gap-2 text-emerald-100/60"
+          className="mt-14 flex flex-col items-start gap-2 text-emerald-900/50"
         >
           <span className="text-[11px] uppercase tracking-[0.24em]">{t("hero.scroll")}</span>
           <ChevronDown size={18} className="animate-bounce" />
         </motion.div>
       </motion.div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-[#0A2F24]/70 px-4 py-3 backdrop-blur-md sm:px-6">
-        <p className="mx-auto max-w-7xl text-xs tracking-wide text-emerald-100/70">
+      <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-emerald-900/10 bg-[#0A2F24] px-4 py-3 sm:px-6">
+        <p className="mx-auto max-w-7xl text-xs tracking-wide text-emerald-100/75">
           {SITE.address} · {SITE.phones.join(" · ")} · {SITE.website}
         </p>
       </div>
