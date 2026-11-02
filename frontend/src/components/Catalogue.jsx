@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, MessageCircle, Eye, Package, Sparkles } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { PRODUCTS, CATEGORIES, APPLICATIONS, ALL_CROPS } from "@/data/products";
+import { PRODUCTS, CATEGORIES } from "@/data/products";
 import { Reveal, Eyebrow, MaskedLine } from "@/components/Reveal";
 import SectionLang from "@/components/SectionLang";
 import { waLink, productMail } from "@/config/site";
@@ -13,18 +13,12 @@ export const enquireAbout = (product) => {
 
 export default function Catalogue({ onView }) {
   const { t, tx, lang } = useLanguage();
-  const [cat, setCat] = useState("all");
-  const [crop, setCrop] = useState("all");
-  const [app, setApp] = useState("all");
   const [q, setQ] = useState("");
 
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
+    if (!needle) return PRODUCTS;
     return PRODUCTS.filter((p) => {
-      if (cat !== "all" && p.category !== cat) return false;
-      if (crop !== "all" && !p.crops.includes(crop)) return false;
-      if (app !== "all" && !p.application.includes(app)) return false;
-      if (!needle) return true;
       const hay = [
         p.name,
         p.category,
@@ -35,16 +29,7 @@ export default function Catalogue({ onView }) {
       ].join(" ").toLowerCase();
       return hay.includes(needle);
     });
-  }, [cat, crop, app, q]);
-
-  const counts = useMemo(() => {
-    const m = { all: PRODUCTS.length };
-    CATEGORIES.forEach((c) => (m[c.id] = PRODUCTS.filter((p) => p.category === c.id).length));
-    return m;
-  }, []);
-
-  const selectCls =
-    "rounded-full border border-emerald-900/15 bg-white/80 px-4 py-2 text-sm text-emerald-950/80 outline-none focus:border-[#1E6B4A]";
+  }, [q]);
 
   return (
     <section id="products" className="relative bg-[#FFFFFF] py-24 sm:py-32">
@@ -59,58 +44,20 @@ export default function Catalogue({ onView }) {
         </Reveal>
 
         <Reveal delay={0.1} className="mt-10">
-          <div className="flex flex-col items-stretch gap-3 lg:flex-row lg:items-center">
-            <div className="relative flex-1">
+          <div className="mx-auto max-w-2xl">
+            <div className="relative">
               <Search size={17} className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-900/40" />
               <input
                 data-testid="product-search-input"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder={t("catalogue.searchPlaceholder")}
-                className="w-full rounded-full border border-emerald-900/15 bg-white/80 py-3 pl-11 pr-4 text-sm text-emerald-950 outline-none transition-shadow focus:border-[#1E6B4A] focus:shadow-lg focus:shadow-emerald-900/10"
+                className="w-full rounded-full border border-emerald-900/15 bg-white py-3.5 pl-11 pr-4 text-sm text-emerald-950 shadow-sm outline-none transition-shadow focus:border-[#1E6B4A] focus:shadow-lg focus:shadow-emerald-900/10"
               />
             </div>
-            <div className="flex flex-wrap gap-3">
-              <select data-testid="filter-crop" value={crop} onChange={(e) => setCrop(e.target.value)} className={selectCls} aria-label={t("catalogue.filterCrop")}>
-                <option value="all">{t("catalogue.allCrops")}</option>
-                {ALL_CROPS.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-              <select data-testid="filter-application" value={app} onChange={(e) => setApp(e.target.value)} className={selectCls} aria-label={t("catalogue.filterApp")}>
-                <option value="all">{t("catalogue.allApps")}</option>
-                {APPLICATIONS.map((a) => (
-                  <option key={a.id} value={a.id}>{tx(a.name)}</option>
-                ))}
-              </select>
-            </div>
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-2">
-            <button
-              data-testid="product-category-filter-all"
-              onClick={() => setCat("all")}
-              className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
-                cat === "all" ? "bg-[#0A2F24] text-[#FFFFFF] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
-              }`}
-            >
-              {t("catalogue.all")} · {counts.all}
-            </button>
-            {CATEGORIES.map((c) => (
-              <button
-                key={c.id}
-                data-testid={`product-category-filter-${c.id}`}
-                onClick={() => setCat(c.id)}
-                className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
-                  cat === c.id ? "bg-[#0A2F24] text-[#FFFFFF] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
-                }`}
-              >
-                {tx(c.name)} · {counts[c.id]}
-              </button>
-            ))}
-          </div>
-
-          <p data-testid="product-results-count" className="mt-5 text-xs uppercase tracking-[0.18em] text-emerald-900/50">
+          <p data-testid="product-results-count" className="mt-5 text-center text-xs uppercase tracking-[0.18em] text-emerald-900/50">
             {filtered.length} {t("catalogue.productsCount")}
           </p>
         </Reveal>

@@ -1,55 +1,39 @@
 {
-  "company_name": "JR Agro Chemicals",
-  "hero_fertilizer_farmer": "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85",
-  "hero_fertilizer_farmer_alt": "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85",
-  "theme": {
-    "mood": "Bright, fresh, optimistic, earthy, high-yielding agricultural focus",
-    "primary_palette": "White, Harvest Yellow (#C59B27 / #EAB308), Lush Crop Green (#0A2F24 / #15803D)",
-    "accent": "Gold Sunburst / Earth Soil Brown (#8B5E34)",
-    "forbidden_colors": ["#7351B7", "#1B93A4"]
+  "hero_smart_farmer": "https://images.pexels.com/photos/29858623/pexels-photo-29858623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "hero_smart_farmer_alt": "https://images.unsplash.com/photo-1628492058844-589eb5dc6a35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGluZGlhbiUyMGZhcm1lciUyMGZpZWxkJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkzNjE1MDc5fDA&ixlib=rb-4.1.0&q=85",
+  "hero_smart_farmer_alt_2": "https://images.unsplash.com/photo-1609252285236-93406ce15b0d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGluZGlhbiUyMGZhcm1lciUyMGZpZWxkJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkzNjE1MDc5fDA&ixlib=rb-4.1.0&q=85",
+  "image_urls": {
+    "hero_smart_farmer": "https://images.pexels.com/photos/29858623/pexels-photo-29858623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "hero_smart_farmer_alt": "https://images.unsplash.com/photo-1628492058844-589eb5dc6a35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGluZGlhbiUyMGZhcm1lciUyMGZpZWxkJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzkzNjE1MDc5fDA&ixlib=rb-4.1.0&q=85"
   },
-  "typography": {
-    "heading_font": "Cormorant Garamond / Tiro Devanagari Marathi / Display Serif",
-    "body_font": "Plus Jakarta Sans, sans-serif",
-    "hierarchy": {
-      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-emerald-950",
-      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold text-emerald-900",
-      "h3": "text-xl sm:text-2xl font-medium text-emerald-800",
-      "body": "text-base text-slate-700 leading-relaxed"
-    }
+  "brand_identity": {
+    "company_type": "Indian Agri-tech & Premium Fertilizer Company",
+    "theme": "Organic & Earthy + Modern Smart Farming",
+    "emotional_tone": "Progressive, trustworthy, cheerful, proud, technologically advanced"
   },
   "colors": {
-    "background": "#FAFA3",
-    "surface": "#FFFFFF",
     "primary": "#0A2F24",
-    "primary_light": "#15803D",
-    "accent_yellow": "#C59B27",
-    "border": "#E2E8F0",
-    "card_bg": "#FFFFFF"
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#EAF4EC",
+    "accent": "#F5B301",
+    "accent_hover": "#D99E00",
+    "background": "#FFFFFF",
+    "foreground": "#0F281E",
+    "muted": "#F2F7F4",
+    "border": "#D2E4D8"
   },
-  "image_urls": {
-    "hero_primary": {
-      "url": "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85",
-      "category": "Hero Banner",
-      "description": "Indian farmer applying fertilizer in a lush green field with visible soil and thriving crops, bright optimistic daylight"
-    },
-    "hero_backup": {
-      "url": "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85",
-      "category": "Hero Banner Alt",
-      "description": "Happy farmer broadcasting nutrition/fertilizer across crop rows showing green foliage and rich soil"
-    }
+  "typography": {
+    "font_family_display": "'Cormorant Garamond', 'Tiro Devanagari Marathi', serif",
+    "font_family_body": "'Plus Jakarta Sans', 'Tiro Devanagari Marathi', sans-serif",
+    "h1_size": "text-4xl sm:text-5xl lg:text-6xl",
+    "h2_size": "text-2xl sm:text-3xl lg:text-4xl",
+    "h3_size": "text-xl sm:text-2xl"
   },
-  "visual_enhancers": {
-    "grain_overlay": "Subtle SVG turbulence grain for organic tactile feeling",
-    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-emerald-900/10",
-    "animations": "Subtle leaf sway, granule float, marquee drift for certified products",
-    "testing_attributes": "All interactive elements must include data-testid attributes"
-  },
-  "instructions_to_main_agent": [
-    "Use Javascript (.js / .jsx) components.",
-    "Ensure header navigation is visible on desktop with high contrast backdrop.",
-    "Implement data-testid attributes on all interactive elements (buttons, inputs, links).",
-    "Use primary image URL hero_fertilizer_farmer in the hero section.",
-    "Ensure image container maintains landscape aspect ratio with clear text overlay contrast."
+  "general_ui_ux_guidelines": [
+    "Ensure high contrast between white overlay text and hero background image using a gentle gradient scrim (e.g. bg-gradient-to-r from-black/75 via-black/45 to-transparent or backdrop-blur-xs).",
+    "Include visible navigation header on desktop with explicit background and z-50 stack.",
+    "Every interactive button, link, tab, input, and critical visual element MUST have a data-testid attribute in kebab-case format.",
+    "Use generous spacing (p-8 to p-16) and clean responsive grid layout.",
+    "Use micro-interactions, hover states, and smooth transitions for interactive elements."
   ]
 }

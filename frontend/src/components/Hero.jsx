@@ -7,7 +7,7 @@ import SectionLang from "@/components/SectionLang";
 import { SITE } from "@/config/site";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85";
+  "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -17,13 +17,14 @@ export default function Hero() {
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
-    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#FFFFFF]">
+    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#0A2F24]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Happy Indian farmer applying fertilizer to his green field" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/60 to-[#FFFFFF]/15" />
+        <img src={HERO_IMG} alt="Happy Indian farmer applying fertilizer to his field with soil and green crops" className="h-full w-full object-cover object-[center_22%]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24]/80 via-[#0A2F24]/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A2F24]/45 via-transparent to-transparent" />
       </motion.div>
 
-      <SectionLang />
+      <SectionLang light />
       <Leaf className="animate-leaf absolute right-[12%] top-[22%] hidden text-[#F5B301]/50 lg:block" size={64} />
       <Leaf className="animate-leaf absolute left-[8%] top-[30%] hidden text-[#1E6B4A]/20 lg:block" size={44} style={{ animationDelay: "2s" }} />
 
@@ -33,9 +34,9 @@ export default function Hero() {
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-[#FFFFFF]/90">{t("hero.trust")}</span>
         </div>
 
-        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#0A2F24]">
+        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
           <MaskedLine text={t("hero.title1")} delay={0.35} />
-          <span className="text-[#A8821C]">
+          <span className="text-white">
             <MaskedLine text={t("hero.title2")} delay={0.5} />
           </span>
         </h1>
@@ -44,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="mt-6 max-w-xl text-base text-emerald-950/70 sm:text-lg"
+          className="mt-6 max-w-xl text-base text-white/90 sm:text-lg"
         >
           {t("hero.sub")}
         </motion.p>
@@ -66,7 +67,7 @@ export default function Hero() {
           <a
             data-testid="hero-cta-contact"
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-[#F5B301] bg-white/60 px-7 py-3.5 text-sm font-semibold text-[#0A2F24] backdrop-blur-sm transition-colors hover:bg-[#F5B301] hover:text-[#0A2F24]"
+            className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-[#0A2F24]"
           >
             <Phone size={16} />
             {t("hero.cta2")}
@@ -77,7 +78,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6 }}
-          className="mt-14 flex flex-col items-start gap-2 text-emerald-900/50"
+          className="mt-14 flex flex-col items-start gap-2 text-white/70"
         >
           <span className="text-[11px] uppercase tracking-[0.24em]">{t("hero.scroll")}</span>
           <ChevronDown size={18} className="animate-bounce" />
