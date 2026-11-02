@@ -14,11 +14,11 @@ export default function SectionLang({ light = false }) {
       data-testid="section-language-selector"
       className={`absolute right-4 top-24 z-20 flex items-center gap-1 rounded-full border px-1.5 py-1 sm:right-6 ${
         light
-          ? "border-white/20 bg-white/10 backdrop-blur-md"
+          ? "border-white/30 bg-[#0A2F24]/70 backdrop-blur-md shadow-lg shadow-emerald-900/20"
           : "border-emerald-900/15 bg-white/70 backdrop-blur-md shadow-sm"
       }`}
     >
-      <Languages size={13} className={light ? "text-[#F5B301]" : "text-[#1E6B4A]"} />
+      <Languages size={13} className={light ? "text-[#FFD02E]" : "text-[#1E6B4A]"} />
       {LANGS.map((l) => (
         <button
           key={l.id}
@@ -28,11 +28,11 @@ export default function SectionLang({ light = false }) {
           className={`rounded-full px-2 py-0.5 text-[11px] font-bold transition-colors ${
             lang === l.id
               ? light
-                ? "bg-[#F5B301] text-[#0A2F24]"
+                ? "bg-[#FFD02E] text-[#0A2F24]"
                 : "bg-[#0A2F24] text-[#FFFFFF]"
               : light
-              ? "text-emerald-50/70 hover:text-white"
-              : "text-emerald-950/55 hover:text-[#0A2F24]"
+              ? "text-white hover:text-[#FFD02E]"
+              : "text-emerald-950/80 hover:text-[#0A2F24]"
           }`}
         >
           {l.label}

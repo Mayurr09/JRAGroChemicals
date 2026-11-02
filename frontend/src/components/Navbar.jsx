@@ -17,7 +17,7 @@ export const LangSelector = ({ dark = false }) => {
     <div
       data-testid="language-selector"
       className={`flex items-center gap-1 rounded-full border px-1 py-1 ${
-        dark ? "border-white/20 bg-white/5" : "border-emerald-900/15 bg-white/60"
+        dark ? "border-white/30 bg-[#0A2F24]/60" : "border-emerald-900/15 bg-white/60"
       }`}
     >
       {LANGS.map((l) => (
@@ -29,8 +29,8 @@ export const LangSelector = ({ dark = false }) => {
             lang === l.id
               ? "bg-[#0A2F24] text-[#FFFFFF]"
               : dark
-              ? "text-emerald-50/70 hover:text-white"
-              : "text-emerald-950/60 hover:text-[#0A2F24]"
+              ? "text-white hover:text-[#FFD02E]"
+              : "text-emerald-950/80 hover:text-[#0A2F24]"
           }`}
         >
           {l.label}
