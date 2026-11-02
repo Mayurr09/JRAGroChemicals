@@ -44,15 +44,16 @@ export default function Catalogue({ onView }) {
         </Reveal>
 
         <Reveal delay={0.1} className="mt-10">
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto max-w-3xl">
             <div className="relative">
-              <Search size={17} className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-900/40" />
+              <Search size={20} strokeWidth={2.6} className="absolute left-5 top-1/2 -translate-y-1/2 text-[#0A2F24]" />
               <input
                 data-testid="product-search-input"
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder={t("catalogue.searchPlaceholder")}
-                className="w-full rounded-full border border-emerald-900/15 bg-white py-3.5 pl-11 pr-4 text-sm text-emerald-950 shadow-sm outline-none transition-shadow focus:border-[#1E6B4A] focus:shadow-lg focus:shadow-emerald-900/10"
+                className="w-full rounded-full border-2 border-[#0A2F24] bg-white py-4 pl-13 pr-5 text-base font-bold text-emerald-950 shadow-[0_10px_30px_rgba(10,47,36,0.15)] outline-none transition-all placeholder:font-semibold placeholder:text-emerald-900/40 focus:border-[#F5B301] focus:shadow-[0_14px_40px_rgba(10,47,36,0.22)]"
+                style={{ paddingLeft: "3.25rem" }}
               />
             </div>
           </div>
@@ -76,7 +77,7 @@ export default function Catalogue({ onView }) {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.96 }}
                   transition={{ duration: 0.45, delay: Math.min(idx * 0.04, 0.3) }}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-emerald-900/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/15"
+                  className="group flex flex-col overflow-hidden rounded-2xl border-2 border-emerald-900/15 bg-white shadow-[0_10px_32px_rgba(10,47,36,0.14)] transition-all duration-300 hover:-translate-y-2 hover:border-[#0A2F24]/40 hover:shadow-[0_24px_55px_rgba(10,47,36,0.28)]"
                 >
                   <button onClick={() => onView(p)} className="relative block overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-white" data-testid={`product-image-${p.id}`}>
                     <img src={p.image} alt={`${p.name} — JR Agro Chemicals`} loading="lazy" className="mx-auto h-52 object-contain p-4 transition-transform duration-500 group-hover:scale-[1.06]" />
@@ -85,8 +86,8 @@ export default function Catalogue({ onView }) {
                     </span>
                   </button>
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="font-display text-xl font-bold text-[#0A2F24]">{p.name}</h3>
-                    <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-stone-600">{tx(p.tagline)}</p>
+                    <h3 className="font-display text-2xl font-extrabold text-[#0A2F24]">{p.name}</h3>
+                    <p className="mt-1.5 line-clamp-2 text-[13px] font-medium leading-relaxed text-stone-600">{tx(p.tagline)}</p>
                     <p className="mt-3 flex items-start gap-1.5 text-xs text-emerald-900/70">
                       <Sparkles size={13} className="mt-0.5 shrink-0 text-[#F5B301]" />
                       <span className="line-clamp-1">{tx(p.benefits)[0]}</span>
@@ -99,7 +100,7 @@ export default function Catalogue({ onView }) {
                       <button
                         data-testid={`product-view-details-${p.id}`}
                         onClick={() => onView(p)}
-                        className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-[#0A2F24] px-3 py-2 text-xs font-semibold text-[#FFFFFF] transition-colors hover:bg-[#1E6B4A]"
+                        className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-[#0A2F24] px-3 py-2.5 text-xs font-bold text-[#FFFFFF] transition-colors hover:bg-[#1E6B4A]"
                       >
                         <Eye size={13} /> {t("catalogue.viewDetails")}
                       </button>
