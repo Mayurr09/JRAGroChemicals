@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#0A2F24]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Happy farmer spraying JR Agro Chemicals products on his green field" className="h-full w-full object-cover object-center" />
+        <img src={HERO_IMG} alt="Happy farmer spraying JR Agro Chemicals products on his green field" className="h-full w-full object-cover object-[68%_center] md:object-[60%_center] lg:object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24]/80 via-[#0A2F24]/15 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A2F24]/45 via-transparent to-transparent" />
       </motion.div>
