@@ -6,8 +6,7 @@ import { MaskedLine } from "@/components/Reveal";
 import SectionLang from "@/components/SectionLang";
 import { SITE } from "@/config/site";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85";
+const HERO_IMG = "/hero-farmer.webp";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -19,7 +18,7 @@ export default function Hero() {
   return (
     <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#0A2F24]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Happy Indian farmer applying fertilizer to his field with soil and green crops" className="h-full w-full object-cover object-[center_22%]" />
+        <img src={HERO_IMG} alt="Happy farmer spraying JR Agro Chemicals products on his green field" className="h-full w-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A2F24]/80 via-[#0A2F24]/15 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A2F24]/45 via-transparent to-transparent" />
       </motion.div>
