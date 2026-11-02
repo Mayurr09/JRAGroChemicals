@@ -34,9 +34,9 @@ export default function Hero() {
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-[#FFFFFF]/90">{t("hero.trust")}</span>
         </div>
 
-        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+        <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white [text-shadow:0_2px_18px_rgba(10,47,36,0.55)]">
           <MaskedLine text={t("hero.title1")} delay={0.35} />
-          <span className="text-white">
+          <span className="text-[#FFD02E]">
             <MaskedLine text={t("hero.title2")} delay={0.5} />
           </span>
         </h1>
@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="mt-6 max-w-xl text-base text-white/90 sm:text-lg"
+          className="mt-6 max-w-xl text-base font-medium text-white sm:text-lg [text-shadow:0_1px_12px_rgba(10,47,36,0.6)]"
         >
           {t("hero.sub")}
         </motion.p>
