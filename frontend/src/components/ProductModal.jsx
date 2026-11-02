@@ -28,6 +28,7 @@ export default function ProductModal({ product, onClose }) {
       {product && (
         <motion.div
           data-testid="product-detail-modal"
+          data-lenis-prevent=""
           className="fixed inset-0 z-[90] flex items-end justify-center bg-[#0A2F24]/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

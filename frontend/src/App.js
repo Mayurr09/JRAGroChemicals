@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 import { Toaster } from "sonner";
 import "@/App.css";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -27,8 +28,20 @@ function Site() {
   const [viewing, setViewing] = useState(null);
 
   useEffect(() => {
-    const lenis = new Lenis({ autoRaf: true, anchors: true, lerp: 0.09 });
-    return () => lenis.destroy();
+    const lenis = new Lenis({ lerp: 0.09 });
+    let frameId;
+
+    // Lenis 1.1 requires an explicit animation loop to advance wheel scrolling.
+    const animate = (time) => {
+      lenis.raf(time);
+      frameId = requestAnimationFrame(animate);
+    };
+    frameId = requestAnimationFrame(animate);
+
+    return () => {
+      cancelAnimationFrame(frameId);
+      lenis.destroy();
+    };
   }, []);
 
   return (
