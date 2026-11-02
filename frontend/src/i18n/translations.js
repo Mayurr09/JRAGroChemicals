@@ -47,8 +47,6 @@ export const T = {
       values: [
         { title: "Quality", desc: "Every batch is formulated and checked to deliver consistent, dependable results in the field." },
         { title: "Innovation", desc: "Modern bio-stimulant and chelation science, adapted to Indian soils and Indian crops." },
-        { title: "Farmer Focus", desc: "Products, guidance and support designed around the real needs of the farming family." },
-        { title: "Sustainability", desc: "Eco-friendly, residue-conscious formulations that protect soil health for the next generation." },
         { title: "Reliability", desc: "Honest information, dependable supply and support you can reach on a phone call." },
       ],
     },
@@ -265,8 +263,6 @@ export const T = {
       values: [
         { title: "गुणवत्ता", desc: "हर बैच सावधानी से तैयार और जाँचा जाता है, ताकि खेत में हर बार एक जैसा भरोसेमंद नतीजा मिले।" },
         { title: "नवाचार", desc: "आधुनिक बायो-स्टिम्युलेंट और किलेट तकनीक — भारतीय मिट्टी और फसलों के लिए।" },
-        { title: "किसान सर्वोपरि", desc: "उत्पाद, मार्गदर्शन और सहायता — किसान परिवार की असली जरूरतों को ध्यान में रखकर।" },
-        { title: "टिकाऊ खेती", desc: "पर्यावरण-हितैषी उत्पाद जो अगली पीढ़ी के लिए मिट्टी की सेहत बचाए रखें।" },
         { title: "भरोसा", desc: "सच्ची जानकारी, समय पर सप्लाई और एक फोन पर मिलने वाला साथ।" },
       ],
     },
@@ -483,8 +479,6 @@ export const T = {
       values: [
         { title: "गुणवत्ता", desc: "प्रत्येक बॅच काळजीपूर्वक तयार केला जातो व तपासला जातो — शेतात नेहमी एकसारखा विश्वासू परिणाम मिळावा म्हणून." },
         { title: "नावीन्य", desc: "आधुनिक बायो-स्टिम्युलंट व किलेट तंत्रज्ञान — भारतीय माती व पिकांसाठी." },
-        { title: "शेतकरी केंद्रित", desc: "उत्पादने, मार्गदर्शन व सेवा — शेतकरी कुटुंबाच्या खऱ्या गरजा डोळ्यांसमोर ठेवून." },
-        { title: "शाश्वतता", desc: "पर्यावरणपूरक उत्पादने — पुढील पिढीसाठी मातीचे आरोग्य जपणारी." },
         { title: "विश्वासार्हता", desc: "प्रामाणिक माहिती, वेळेवर पुरवठा आणि एका फोनवर मिळणारी साथ." },
       ],
     },

@@ -47,7 +47,7 @@ export default function Catalogue({ onView }) {
     "rounded-full border border-emerald-900/15 bg-white/80 px-4 py-2 text-sm text-emerald-950/80 outline-none focus:border-[#1E6B4A]";
 
   return (
-    <section id="products" className="relative bg-[#F3EFE6] py-24 sm:py-32">
+    <section id="products" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -91,7 +91,7 @@ export default function Catalogue({ onView }) {
               data-testid="product-category-filter-all"
               onClick={() => setCat("all")}
               className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
-                cat === "all" ? "bg-[#0A2F24] text-[#FAF8F3] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
+                cat === "all" ? "bg-[#0A2F24] text-[#FFFFFF] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
               }`}
             >
               {t("catalogue.all")} · {counts.all}
@@ -102,7 +102,7 @@ export default function Catalogue({ onView }) {
                 data-testid={`product-category-filter-${c.id}`}
                 onClick={() => setCat(c.id)}
                 className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
-                  cat === c.id ? "bg-[#0A2F24] text-[#FAF8F3] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
+                  cat === c.id ? "bg-[#0A2F24] text-[#FFFFFF] shadow-lg shadow-emerald-900/20" : "border border-emerald-900/15 bg-white/70 text-emerald-950/70 hover:border-[#1E6B4A]"
                 }`}
               >
                 {tx(c.name)} · {counts[c.id]}
@@ -131,9 +131,9 @@ export default function Catalogue({ onView }) {
                   transition={{ duration: 0.45, delay: Math.min(idx * 0.04, 0.3) }}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-emerald-900/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/15"
                 >
-                  <button onClick={() => onView(p)} className="relative block overflow-hidden bg-gradient-to-b from-[#F3EFE6] to-white" data-testid={`product-image-${p.id}`}>
+                  <button onClick={() => onView(p)} className="relative block overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-white" data-testid={`product-image-${p.id}`}>
                     <img src={p.image} alt={`${p.name} — JR Agro Chemicals`} loading="lazy" className="mx-auto h-52 object-contain p-4 transition-transform duration-500 group-hover:scale-[1.06]" />
-                    <span className="absolute left-3 top-3 rounded-full bg-[#0A2F24]/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#C59B27]">
+                    <span className="absolute left-3 top-3 rounded-full bg-[#0A2F24]/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#F5B301]">
                       {tx(CATEGORIES.find((c) => c.id === p.category)?.name)}
                     </span>
                   </button>
@@ -141,25 +141,25 @@ export default function Catalogue({ onView }) {
                     <h3 className="font-display text-xl font-bold text-[#0A2F24]">{p.name}</h3>
                     <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-stone-600">{tx(p.tagline)}</p>
                     <p className="mt-3 flex items-start gap-1.5 text-xs text-emerald-900/70">
-                      <Sparkles size={13} className="mt-0.5 shrink-0 text-[#C59B27]" />
+                      <Sparkles size={13} className="mt-0.5 shrink-0 text-[#F5B301]" />
                       <span className="line-clamp-1">{tx(p.benefits)[0]}</span>
                     </p>
                     <p className="mt-2 flex items-start gap-1.5 text-xs text-emerald-900/70">
-                      <Package size={13} className="mt-0.5 shrink-0 text-[#C59B27]" />
+                      <Package size={13} className="mt-0.5 shrink-0 text-[#F5B301]" />
                       <span className="line-clamp-1">{p.crops.slice(0, 4).join(", ")}{p.crops.length > 4 ? " +" : ""}</span>
                     </p>
                     <div className="mt-4 flex items-center gap-2 border-t border-emerald-900/10 pt-4">
                       <button
                         data-testid={`product-view-details-${p.id}`}
                         onClick={() => onView(p)}
-                        className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-[#0A2F24] px-3 py-2 text-xs font-semibold text-[#FAF8F3] transition-colors hover:bg-[#1E6B4A]"
+                        className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-[#0A2F24] px-3 py-2 text-xs font-semibold text-[#FFFFFF] transition-colors hover:bg-[#1E6B4A]"
                       >
                         <Eye size={13} /> {t("catalogue.viewDetails")}
                       </button>
                       <button
                         data-testid={`product-enquire-${p.id}`}
                         onClick={() => enquireAbout(p)}
-                        className="rounded-full border border-emerald-900/20 px-3 py-2 text-xs font-semibold text-[#0A2F24] transition-colors hover:border-[#C59B27] hover:text-[#1E6B4A]"
+                        className="rounded-full border border-emerald-900/20 px-3 py-2 text-xs font-semibold text-[#0A2F24] transition-colors hover:border-[#F5B301] hover:text-[#1E6B4A]"
                       >
                         {t("catalogue.enquireNow")}
                       </button>

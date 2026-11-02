@@ -27,7 +27,7 @@ export const LangSelector = ({ dark = false }) => {
           onClick={() => setLang(l.id)}
           className={`rounded-full px-2.5 py-1 text-xs font-semibold transition-colors ${
             lang === l.id
-              ? "bg-[#0A2F24] text-[#FAF8F3]"
+              ? "bg-[#0A2F24] text-[#FFFFFF]"
               : dark
               ? "text-emerald-50/70 hover:text-white"
               : "text-emerald-950/60 hover:text-[#0A2F24]"
@@ -65,12 +65,12 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-emerald-900/10 bg-[#FAF8F3]/85 shadow-[0_8px_40px_rgba(10,47,36,0.10)] backdrop-blur-xl"
+          ? "border-b border-emerald-900/10 bg-[#FFFFFF]/85 shadow-[0_8px_40px_rgba(10,47,36,0.10)] backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <a href="#home" aria-label="JR Agro Chemicals home" className={`rounded-2xl px-2 py-1 transition-colors ${scrolled ? "" : "bg-[#FAF8F3]/85 backdrop-blur-md"}`}>
+        <a href="#home" aria-label="JR Agro Chemicals home" className={`rounded-2xl px-2 py-1 transition-colors ${scrolled ? "" : "bg-[#FFFFFF]/85 backdrop-blur-md"}`}>
           <LogoFull />
         </a>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
           <a
             data-testid="nav-enquire-button"
             href={mailLink("Product Enquiry — JR Agro Chemicals Website", "Hello JR Agro Chemicals,\n\nI would like to know more about your products.\n\nName: \nMobile: \n\nThank you.")}
-            className="inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-5 py-2.5 text-sm font-semibold text-[#FAF8F3] transition-all hover:bg-[#1E6B4A] hover:shadow-lg hover:shadow-emerald-900/25"
+            className="inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-5 py-2.5 text-sm font-semibold text-[#FFFFFF] transition-all hover:bg-[#1E6B4A] hover:shadow-lg hover:shadow-emerald-900/25"
           >
             <MessageCircle size={16} />
             {t("nav.enquire")}
@@ -116,7 +116,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-b border-emerald-900/10 bg-[#FAF8F3]/95 backdrop-blur-xl lg:hidden"
+            className="overflow-hidden border-b border-emerald-900/10 bg-[#FFFFFF]/95 backdrop-blur-xl lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-4">
               {links.map((l) => (
@@ -134,7 +134,7 @@ export default function Navbar() {
                 <LangSelector />
                 <a
                   href={mailLink("Product Enquiry — JR Agro Chemicals Website", "Hello JR Agro Chemicals,\n\nI would like to know more about your products.\n\nName: \nMobile: \n\nThank you.")}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-4 py-2 text-sm font-semibold text-[#FAF8F3]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-4 py-2 text-sm font-semibold text-[#FFFFFF]"
                 >
                   <MessageCircle size={15} />
                   {t("nav.enquire")}

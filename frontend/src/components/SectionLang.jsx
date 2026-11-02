@@ -18,7 +18,7 @@ export default function SectionLang({ light = false }) {
           : "border-emerald-900/15 bg-white/70 backdrop-blur-md shadow-sm"
       }`}
     >
-      <Languages size={13} className={light ? "text-[#C59B27]" : "text-[#1E6B4A]"} />
+      <Languages size={13} className={light ? "text-[#F5B301]" : "text-[#1E6B4A]"} />
       {LANGS.map((l) => (
         <button
           key={l.id}
@@ -28,8 +28,8 @@ export default function SectionLang({ light = false }) {
           className={`rounded-full px-2 py-0.5 text-[11px] font-bold transition-colors ${
             lang === l.id
               ? light
-                ? "bg-[#C59B27] text-[#0A2F24]"
-                : "bg-[#0A2F24] text-[#FAF8F3]"
+                ? "bg-[#F5B301] text-[#0A2F24]"
+                : "bg-[#0A2F24] text-[#FFFFFF]"
               : light
               ? "text-emerald-50/70 hover:text-white"
               : "text-emerald-950/55 hover:text-[#0A2F24]"

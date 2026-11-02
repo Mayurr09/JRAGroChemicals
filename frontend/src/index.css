@@ -4,19 +4,19 @@
 
 @layer base {
     :root {
-        --background: 42 25% 97%;
+        --background: 0 0% 100%;
         --foreground: 150 25% 10%;
-        --card: 40 20% 99%;
+        --card: 0 0% 100%;
         --card-foreground: 150 25% 10%;
-        --popover: 40 20% 99%;
+        --popover: 0 0% 100%;
         --popover-foreground: 150 25% 10%;
         --primary: 161 64% 13%;
-        --primary-foreground: 42 30% 96%;
-        --secondary: 155 35% 92%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 100 35% 94%;
         --secondary-foreground: 161 64% 13%;
-        --muted: 40 15% 92%;
-        --muted-foreground: 150 12% 40%;
-        --accent: 43 65% 52%;
+        --muted: 100 20% 94%;
+        --muted-foreground: 150 12% 38%;
+        --accent: 44 96% 48%;
         --accent-foreground: 161 64% 10%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
@@ -39,7 +39,7 @@
         overflow-x: hidden;
     }
     ::selection {
-        background: #C59B27;
+        background: #F5B301;
         color: #0A2F24;
     }
 }

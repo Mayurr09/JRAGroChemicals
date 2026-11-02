@@ -10,7 +10,7 @@ export default function WhyChooseUs() {
   const items = t("why.items");
 
   return (
-    <section id="why-us" className="relative bg-[#FAF8F3] py-24 sm:py-32">
+    <section id="why-us" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -26,9 +26,9 @@ export default function WhyChooseUs() {
             const Icon = ICONS[i % ICONS.length];
             return (
               <Reveal key={i} delay={(i % 3) * 0.1}>
-                <div data-testid={`why-card-${i}`} className="group h-full rounded-2xl border border-emerald-900/10 bg-white/80 p-7 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#C59B27]/50 hover:shadow-xl hover:shadow-emerald-900/10">
+                <div data-testid={`why-card-${i}`} className="group h-full rounded-2xl border border-emerald-900/10 bg-white/80 p-7 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#F5B301]/50 hover:shadow-xl hover:shadow-emerald-900/10">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0A2F24] text-[#C59B27] transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0A2F24] text-[#F5B301] transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
                       <Icon size={20} />
                     </div>
                     <h3 className="font-display text-lg font-semibold text-[#0A2F24]">{item.title}</h3>

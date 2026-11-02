@@ -7,7 +7,7 @@ import SectionLang from "@/components/SectionLang";
 import { SITE } from "@/config/site";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1626606441167-bec3dfa06b31?crop=entropy&cs=srgb&fm=jpg&q=85";
+  "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -17,20 +17,20 @@ export default function Hero() {
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   return (
-    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#FAF8F3]">
+    <section id="home" ref={ref} className="grain relative flex min-h-screen items-end overflow-hidden bg-[#FFFFFF]">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
-        <img src={HERO_IMG} alt="Soft golden wheat field under a calm morning sky" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F3] via-[#FAF8F3]/60 to-[#FAF8F3]/15" />
+        <img src={HERO_IMG} alt="Happy Indian farmer applying fertilizer to his green field" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/60 to-[#FFFFFF]/15" />
       </motion.div>
 
       <SectionLang />
-      <Leaf className="animate-leaf absolute right-[12%] top-[22%] hidden text-[#C59B27]/50 lg:block" size={64} />
+      <Leaf className="animate-leaf absolute right-[12%] top-[22%] hidden text-[#F5B301]/50 lg:block" size={64} />
       <Leaf className="animate-leaf absolute left-[8%] top-[30%] hidden text-[#1E6B4A]/20 lg:block" size={44} style={{ animationDelay: "2s" }} />
 
       <motion.div style={{ opacity: fade }} className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-24 pt-40 sm:px-6">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#0A2F24]/90 px-4 py-2 shadow-lg shadow-emerald-900/15 backdrop-blur-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#C59B27]" />
-          <span className="text-xs font-medium uppercase tracking-[0.18em] text-[#FAF8F3]/90">{t("hero.trust")}</span>
+          <span className="h-1.5 w-1.5 rounded-full bg-[#F5B301]" />
+          <span className="text-xs font-medium uppercase tracking-[0.18em] text-[#FFFFFF]/90">{t("hero.trust")}</span>
         </div>
 
         <h1 data-testid="hero-title" className="font-display max-w-4xl text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#0A2F24]">
@@ -58,7 +58,7 @@ export default function Hero() {
           <a
             data-testid="hero-cta-catalogue"
             href="#products"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-7 py-3.5 text-sm font-bold text-[#FAF8F3] transition-all hover:bg-[#1E6B4A] hover:shadow-xl hover:shadow-emerald-900/25"
+            className="group inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-7 py-3.5 text-sm font-bold text-[#FFFFFF] transition-all hover:bg-[#1E6B4A] hover:shadow-xl hover:shadow-emerald-900/25"
           >
             {t("hero.cta1")}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
@@ -66,7 +66,7 @@ export default function Hero() {
           <a
             data-testid="hero-cta-contact"
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-[#C59B27] bg-white/60 px-7 py-3.5 text-sm font-semibold text-[#0A2F24] backdrop-blur-sm transition-colors hover:bg-[#C59B27] hover:text-[#0A2F24]"
+            className="inline-flex items-center gap-2 rounded-full border border-[#F5B301] bg-white/60 px-7 py-3.5 text-sm font-semibold text-[#0A2F24] backdrop-blur-sm transition-colors hover:bg-[#F5B301] hover:text-[#0A2F24]"
           >
             <Phone size={16} />
             {t("hero.cta2")}

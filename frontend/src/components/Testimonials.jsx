@@ -12,7 +12,7 @@ export default function Testimonials() {
     : [0, 1, 2].map(() => ({ placeholder: true }));
 
   return (
-    <section id="testimonials" className="relative bg-[#F3EFE6] py-24 sm:py-32">
+    <section id="testimonials" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -27,7 +27,7 @@ export default function Testimonials() {
           {items.map((item, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <figure data-testid={`testimonial-card-${i}`} className={`flex h-full flex-col rounded-2xl border p-7 ${item.placeholder ? "border-dashed border-emerald-900/20 bg-white/50" : "border-emerald-900/10 bg-white shadow-sm"}`}>
-                <Quote size={26} className="text-[#C59B27]/60" />
+                <Quote size={26} className="text-[#F5B301]/60" />
                 <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
                   {item.placeholder ? t("testimonials.placeholderText") : item.text}
                 </blockquote>

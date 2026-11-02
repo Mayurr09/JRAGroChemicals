@@ -11,7 +11,7 @@ export default function FAQ() {
   const items = t("faq.items");
 
   return (
-    <section id="faq" className="relative bg-[#FAF8F3] py-24 sm:py-32">
+    <section id="faq" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -32,7 +32,7 @@ export default function FAQ() {
                   aria-expanded={open === i}
                 >
                   <span className="text-sm font-semibold text-[#0A2F24] sm:text-base">{item.q}</span>
-                  <motion.span animate={{ rotate: open === i ? 45 : 0 }} transition={{ duration: 0.25 }} className="shrink-0 text-[#C59B27]">
+                  <motion.span animate={{ rotate: open === i ? 45 : 0 }} transition={{ duration: 0.25 }} className="shrink-0 text-[#F5B301]">
                     <Plus size={20} />
                   </motion.span>
                 </button>

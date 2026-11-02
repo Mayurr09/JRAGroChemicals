@@ -23,7 +23,7 @@ export default function FarmerSection() {
       </motion.div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="font-display max-w-3xl text-3xl sm:text-4xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-[#FAF8F3]">
+        <h2 className="font-display max-w-3xl text-3xl sm:text-4xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-[#FFFFFF]">
           <MaskedLine text={t("farmer.headline")} />
         </h2>
         <motion.p
@@ -42,7 +42,7 @@ export default function FarmerSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="group mt-9 inline-flex items-center gap-2 rounded-full bg-[#C59B27] px-7 py-3.5 text-sm font-bold text-[#0A2F24] transition-all hover:bg-[#D4AF37]"
+          className="group mt-9 inline-flex items-center gap-2 rounded-full bg-[#F5B301] px-7 py-3.5 text-sm font-bold text-[#0A2F24] transition-all hover:bg-[#FFC928]"
         >
           {t("farmer.cta")}
           <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

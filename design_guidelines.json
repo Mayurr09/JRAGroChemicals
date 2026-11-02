@@ -1,37 +1,55 @@
 {
-  "brand_name": "JR Agro Chemicals",
-  "industry": "Premium Agriculture & Fertilizers",
-  "image_urls": {
-    "hero_light": "https://images.unsplash.com/photo-1626606441167-bec3dfa06b31?crop=entropy&cs=srgb&fm=jpg&q=85",
-    "farmer_crops": "https://images.unsplash.com/photo-1624565019871-16a8d90ad749?crop=entropy&cs=srgb&fm=jpg&q=85",
-    "hero_light_alt": "https://images.unsplash.com/photo-1475265030331-ec191c580a5c?crop=entropy&cs=srgb&fm=jpg&q=85"
+  "company_name": "JR Agro Chemicals",
+  "hero_fertilizer_farmer": "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85",
+  "hero_fertilizer_farmer_alt": "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85",
+  "theme": {
+    "mood": "Bright, fresh, optimistic, earthy, high-yielding agricultural focus",
+    "primary_palette": "White, Harvest Yellow (#C59B27 / #EAB308), Lush Crop Green (#0A2F24 / #15803D)",
+    "accent": "Gold Sunburst / Earth Soil Brown (#8B5E34)",
+    "forbidden_colors": ["#7351B7", "#1B93A4"]
   },
   "typography": {
-    "heading_font": "Playfair Display / Cormorant Garamond",
-    "body_font": "Plus Jakarta Sans",
+    "heading_font": "Cormorant Garamond / Tiro Devanagari Marathi / Display Serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
     "hierarchy": {
-      "h1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight",
-      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif",
-      "h3": "text-xl sm:text-2xl font-sans font-semibold",
-      "body": "text-base leading-relaxed text-slate-700"
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-emerald-950",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold text-emerald-900",
+      "h3": "text-xl sm:text-2xl font-medium text-emerald-800",
+      "body": "text-base text-slate-700 leading-relaxed"
     }
   },
   "colors": {
-    "primary": "#1E4B31",
-    "primary_dark": "#133321",
-    "accent_gold": "#D4A373",
-    "neutral_bg": "#FAF9F5",
-    "overlay_cream": "bg-amber-50/40",
-    "text_dark_green": "#112C1B"
+    "background": "#FAFA3",
+    "surface": "#FFFFFF",
+    "primary": "#0A2F24",
+    "primary_light": "#15803D",
+    "accent_yellow": "#C59B27",
+    "border": "#E2E8F0",
+    "card_bg": "#FFFFFF"
   },
-  "design_directives": {
-    "hero_section": "Light, airy landscape with soft pale horizon, golden wheat field, overlay of cream tint. Dark green typography for high contrast readability. Strictly NO human figures.",
-    "crops_section": "Close-up rich textured wheat ears and field rows. Natural earthy greens and warm golden hues. Strictly NO human faces or bodies.",
-    "hero_alt": "Serene morning dawn landscape with light mist over agricultural fields."
+  "image_urls": {
+    "hero_primary": {
+      "url": "https://images.unsplash.com/photo-1559884743-74a57598c6c7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "category": "Hero Banner",
+      "description": "Indian farmer applying fertilizer in a lush green field with visible soil and thriving crops, bright optimistic daylight"
+    },
+    "hero_backup": {
+      "url": "https://images.unsplash.com/photo-1696371269777-88d1ce71642c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "category": "Hero Banner Alt",
+      "description": "Happy farmer broadcasting nutrition/fertilizer across crop rows showing green foliage and rich soil"
+    }
   },
-  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
-    "Always maintain WCAG AA contrast against text.",
-    "Ensure all interactive elements have data-testid attributes.",
-    "Never use dark blanket overlays that obscure light hero landscape."
+  "visual_enhancers": {
+    "grain_overlay": "Subtle SVG turbulence grain for organic tactile feeling",
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-emerald-900/10",
+    "animations": "Subtle leaf sway, granule float, marquee drift for certified products",
+    "testing_attributes": "All interactive elements must include data-testid attributes"
+  },
+  "instructions_to_main_agent": [
+    "Use Javascript (.js / .jsx) components.",
+    "Ensure header navigation is visible on desktop with high contrast backdrop.",
+    "Implement data-testid attributes on all interactive elements (buttons, inputs, links).",
+    "Use primary image URL hero_fertilizer_farmer in the hero section.",
+    "Ensure image container maintains landscape aspect ratio with clear text overlay contrast."
   ]
 }

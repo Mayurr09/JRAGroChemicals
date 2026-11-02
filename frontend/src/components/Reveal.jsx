@@ -33,7 +33,7 @@ export const MaskedLine = ({ text, delay = 0, className = "" }) => {
 export const Eyebrow = ({ children, light = false }) => (
   <span
     className={`inline-block text-xs uppercase tracking-[0.24em] font-semibold ${
-      light ? "text-[#C59B27]" : "text-[#1E6B4A]"
+      light ? "text-[#F5B301]" : "text-[#1E6B4A]"
     }`}
   >
     {children}

@@ -1,9 +1,9 @@
-import { Award, FlaskConical, HeartHandshake, Leaf, ShieldCheck, Compass, Target } from "lucide-react";
+import { Award, FlaskConical, ShieldCheck, Compass, Target } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { Reveal, Eyebrow, MaskedLine } from "@/components/Reveal";
+import { Reveal, Eyebrow } from "@/components/Reveal";
 import SectionLang from "@/components/SectionLang";
 
-const VALUE_ICONS = [ShieldCheck, FlaskConical, HeartHandshake, Leaf, Award];
+const VALUE_ICONS = [ShieldCheck, FlaskConical, Award];
 
 const IMGS = {
   sprout:
@@ -16,16 +16,13 @@ export default function About() {
   const values = t("about.values");
 
   return (
-    <section id="about" className="relative overflow-hidden bg-[#FAF8F3] py-24 sm:py-32">
+    <section id="about" className="relative overflow-hidden bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div>
             <Reveal>
               <Eyebrow>{t("about.label")}</Eyebrow>
-              <h2 className="font-display mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight text-[#0A2F24]">
-                <MaskedLine text={t("about.title")} />
-              </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-base leading-relaxed text-stone-700">{t("about.p1")}</p>
@@ -34,14 +31,14 @@ export default function About() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <Reveal delay={0.15}>
                 <div className="h-full rounded-2xl border border-emerald-900/10 bg-white/70 p-6 shadow-sm">
-                  <Target size={22} className="text-[#C59B27]" />
+                  <Target size={22} className="text-[#F5B301]" />
                   <h3 className="mt-3 text-lg font-semibold text-[#0A2F24]">{t("about.missionTitle")}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-600">{t("about.mission")}</p>
                 </div>
               </Reveal>
               <Reveal delay={0.25}>
                 <div className="h-full rounded-2xl border border-emerald-900/10 bg-white/70 p-6 shadow-sm">
-                  <Compass size={22} className="text-[#C59B27]" />
+                  <Compass size={22} className="text-[#F5B301]" />
                   <h3 className="mt-3 text-lg font-semibold text-[#0A2F24]">{t("about.visionTitle")}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-600">{t("about.vision")}</p>
                 </div>
@@ -59,7 +56,7 @@ export default function About() {
               </div>
             </div>
             <div className="absolute -bottom-6 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl bg-[#0A2F24] px-6 py-4 text-center shadow-2xl">
-              <p className="font-display text-lg font-semibold text-[#C59B27]">Sangli · Maharashtra · India</p>
+              <p className="font-display text-lg font-semibold text-[#F5B301]">Sangli · Maharashtra · India</p>
               <p className="text-xs text-emerald-100/70">{t("footer.desc").split("—")[0]}</p>
             </div>
           </Reveal>
@@ -69,13 +66,13 @@ export default function About() {
           <Reveal>
             <h3 className="font-display text-center text-xl sm:text-2xl font-semibold text-[#0A2F24]">{t("about.valuesTitle")}</h3>
           </Reveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mx-auto mt-10 grid max-w-5xl gap-5 sm:grid-cols-3">
             {values.map((v, i) => {
               const Icon = VALUE_ICONS[i % VALUE_ICONS.length];
               return (
                 <Reveal key={i} delay={i * 0.08}>
-                  <div className="group h-full rounded-2xl border border-emerald-900/10 bg-white/80 p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#C59B27]/50 hover:shadow-xl hover:shadow-emerald-900/10">
-                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#0A2F24] text-[#C59B27] transition-transform duration-300 group-hover:scale-110">
+                  <div className="group h-full rounded-2xl border border-emerald-900/10 bg-white/80 p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#F5B301]/50 hover:shadow-xl hover:shadow-emerald-900/10">
+                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#0A2F24] text-[#F5B301] transition-transform duration-300 group-hover:scale-110">
                       <Icon size={22} />
                     </div>
                     <h4 className="mt-4 font-semibold text-[#0A2F24]">{v.title}</h4>

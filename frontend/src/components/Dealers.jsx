@@ -21,7 +21,7 @@ export default function Dealers() {
     "rounded-full border border-emerald-900/15 bg-white/80 px-4 py-2.5 text-sm text-emerald-950/80 outline-none focus:border-[#1E6B4A]";
 
   return (
-    <section id="dealers" className="relative bg-[#FAF8F3] py-24 sm:py-32">
+    <section id="dealers" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -61,7 +61,7 @@ export default function Dealers() {
                 href={waLink(t("enquiry.waMessage"))}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-6 py-3 text-sm font-semibold text-[#FAF8F3] transition-colors hover:bg-[#1E6B4A]"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#0A2F24] px-6 py-3 text-sm font-semibold text-[#FFFFFF] transition-colors hover:bg-[#1E6B4A]"
               >
                 <MessageCircle size={15} /> {t("dealers.become")}
               </a>

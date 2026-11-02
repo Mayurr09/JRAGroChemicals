@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { LogoMark } from "@/components/Logo";
 import { SITE } from "@/config/site";
 
 const GRANULES = Array.from({ length: 22 }, (_, i) => ({
@@ -45,7 +44,7 @@ export default function Intro({ onDone }) {
                 left: g.left,
                 width: g.size,
                 height: g.size,
-                background: g.gold ? "#C59B27" : "#67C587",
+                background: g.gold ? "#F5B301" : "#67C587",
                 animationDuration: `${g.duration}s`,
                 animationDelay: `${g.delay}s`,
               }}
@@ -57,26 +56,16 @@ export default function Intro({ onDone }) {
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              className="rounded-3xl bg-white px-10 py-7 shadow-2xl shadow-black/30"
             >
-              <LogoMark size={92} className="drop-shadow-[0_8px_30px_rgba(197,155,39,0.35)]" />
+              <img src="/logo.png" alt="JR Agro Chemicals — Success Your Dream With Us" className="h-28 w-auto sm:h-36" />
             </motion.div>
-
-            <div className="mask-line mt-6">
-              <motion.h1
-                initial={{ y: "110%" }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.9, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#FAF8F3]"
-              >
-                JR Agro <span className="text-[#C59B27]">Chemicals</span>
-              </motion.h1>
-            </div>
 
             <motion.p
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-              className="relative mt-4 max-w-md text-sm sm:text-base text-emerald-100/90"
+              className="relative mt-6 max-w-md text-sm sm:text-base text-emerald-100/90"
             >
               <span className="relative z-10">{tx(SITE.tagline)}</span>
               <span className="animate-sweep pointer-events-none absolute inset-y-0 w-16 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
@@ -86,7 +75,7 @@ export default function Intro({ onDone }) {
           <button
             data-testid="skip-intro-button"
             onClick={() => setVisible(false)}
-            className="absolute bottom-8 right-8 z-10 rounded-full border border-white/25 px-5 py-2 text-xs uppercase tracking-[0.2em] text-emerald-50/90 transition-colors hover:border-[#C59B27] hover:text-[#C59B27]"
+            className="absolute bottom-8 right-8 z-10 rounded-full border border-white/25 px-5 py-2 text-xs uppercase tracking-[0.2em] text-emerald-50/90 transition-colors hover:border-[#F5B301] hover:text-[#F5B301]"
           >
             {t("intro.skip")}
           </button>

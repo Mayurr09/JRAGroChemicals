@@ -37,7 +37,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative bg-[#FAF8F3] py-24 sm:py-32">
+    <section id="contact" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
@@ -52,7 +52,7 @@ export default function Contact() {
             {cards.map((c, i) => (
               <Reveal key={i} delay={i * 0.06}>
                 <div data-testid={c.testid} className="h-full rounded-2xl border border-emerald-900/10 bg-white/80 p-6 shadow-sm">
-                  <c.icon size={20} className="text-[#C59B27]" />
+                  <c.icon size={20} className="text-[#F5B301]" />
                   <div className="mt-3 text-xs font-bold uppercase tracking-[0.16em] text-[#1E6B4A]">{c.label}</div>
                   <div className="mt-1.5 text-sm leading-relaxed text-stone-700">{c.content}</div>
                 </div>

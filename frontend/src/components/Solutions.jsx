@@ -12,11 +12,11 @@ export default function Solutions() {
   return (
     <section id="solutions" className="relative bg-[#0A2F24] py-24 sm:py-32">
       <SectionLang light />
-      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, #C59B27 0, transparent 40%), radial-gradient(circle at 80% 70%, #67C587 0, transparent 40%)" }} />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 25% 25%, #F5B301 0, transparent 40%), radial-gradient(circle at 80% 70%, #67C587 0, transparent 40%)" }} />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
           <Eyebrow light>{t("solutions.label")}</Eyebrow>
-          <h2 className="font-display mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#FAF8F3]">
+          <h2 className="font-display mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#FFFFFF]">
             <MaskedLine text={t("solutions.title")} />
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-emerald-100/70">{t("solutions.sub")}</p>
@@ -30,14 +30,14 @@ export default function Solutions() {
                 <a
                   href="#products"
                   data-testid={`solution-card-${i}`}
-                  className="group flex h-full flex-col rounded-2xl border border-emerald-100/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#C59B27]/40 hover:bg-white/[0.07]"
+                  className="group flex h-full flex-col rounded-2xl border border-emerald-100/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#F5B301]/40 hover:bg-white/[0.07]"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#C59B27]/15 text-[#C59B27] transition-transform duration-300 group-hover:scale-110">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F5B301]/15 text-[#F5B301] transition-transform duration-300 group-hover:scale-110">
                     <Icon size={22} />
                   </div>
-                  <h3 className="font-display mt-5 text-xl font-semibold text-[#FAF8F3]">{item.title}</h3>
+                  <h3 className="font-display mt-5 text-xl font-semibold text-[#FFFFFF]">{item.title}</h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-emerald-100/65">{item.desc}</p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[#C59B27]">
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.16em] text-[#F5B301]">
                     {t("solutions.learnMore")}
                     <ArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
                   </span>

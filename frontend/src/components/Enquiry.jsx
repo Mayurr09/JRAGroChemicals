@@ -65,11 +65,11 @@ export default function Enquiry() {
   return (
     <section id="enquiry" className="relative bg-[#0A2F24] py-24 sm:py-32">
       <SectionLang light />
-      <div className="pointer-events-none absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #C59B27 0, transparent 45%)" }} />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #F5B301 0, transparent 45%)" }} />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
           <Eyebrow light>{t("enquiry.label")}</Eyebrow>
-          <h2 className="font-display mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#FAF8F3]">
+          <h2 className="font-display mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#FFFFFF]">
             <MaskedLine text={t("enquiry.title")} />
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-emerald-100/70">{t("enquiry.sub")}</p>
@@ -112,7 +112,7 @@ export default function Enquiry() {
                 data-testid="enquiry-form-submit-button"
                 type="submit"
                 disabled={busy}
-                className="inline-flex items-center gap-2 rounded-full bg-[#C59B27] px-8 py-3.5 text-sm font-bold text-[#0A2F24] transition-all hover:bg-[#D4AF37] disabled:opacity-60"
+                className="inline-flex items-center gap-2 rounded-full bg-[#F5B301] px-8 py-3.5 text-sm font-bold text-[#0A2F24] transition-all hover:bg-[#FFC928] disabled:opacity-60"
               >
                 {busy ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
                 {busy ? t("enquiry.submitting") : t("enquiry.submit")}

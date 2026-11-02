@@ -9,7 +9,7 @@ export default function Certifications() {
   const items = t("certs.placeholders");
 
   return (
-    <section id="certifications" className="relative bg-[#F3EFE6] py-24 sm:py-32">
+    <section id="certifications" className="relative bg-[#FFFFFF] py-24 sm:py-32">
       <SectionLang />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <Reveal className="text-center">
