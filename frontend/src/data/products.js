@@ -1,7 +1,11 @@
 export const CATEGORIES = [
   {
     id: "biostimulants",
-    name: { en: "Bio-Stimulants & Growth Promoters", hi: "बायो-स्टिम्युलेंट व वृद्धि प्रवर्तक", mr: "बायो-स्टिम्युलंट व वाढ प्रवर्तक" },
+    name: {
+      en: "Bio-Stimulants & Growth Promoters",
+      hi: "बायो-स्टिम्युलेंट व वृद्धि प्रवर्तक",
+      mr: "बायो-स्टिम्युलंट व वाढ प्रवर्तक",
+    },
     desc: {
       en: "Natural bio-stimulants, amino acids, seaweed and kelp based plant growth enhancers.",
       hi: "प्राकृतिक बायो-स्टिम्युलेंट, अमीनो एसिड, सीवीड और केल्प आधारित पौध वृद्धि वर्धक।",
@@ -10,7 +14,11 @@ export const CATEGORIES = [
   },
   {
     id: "micronutrients",
-    name: { en: "Micronutrients", hi: "सूक्ष्म पोषक तत्व", mr: "सूक्ष्म अन्नद्रव्ये" },
+    name: {
+      en: "Micronutrients",
+      hi: "सूक्ष्म पोषक तत्व",
+      mr: "सूक्ष्म अन्नद्रव्ये",
+    },
     desc: {
       en: "Chelated and inorganic micronutrient fertilizers — zinc, calcium, magnesium, boron, iron and mixes.",
       hi: "किलेटेड व अकर्बनिक सूक्ष्म पोषक उर्वरक — जिंक, कैल्शियम, मैग्नीशियम, बोरॉन, आयरन व मिश्रण।",
@@ -28,7 +36,11 @@ export const CATEGORIES = [
   },
   {
     id: "specialty",
-    name: { en: "Specialty & Crop Care", hi: "विशेष व पीक देखभाल", mr: "विशेष व पीक संरक्षण" },
+    name: {
+      en: "Specialty & Crop Care",
+      hi: "विशेष व पीक देखभाल",
+      mr: "विशेष व पीक संरक्षण",
+    },
     desc: {
       en: "Silicon products, spreaders, wetting agents and natural crop protection solutions.",
       hi: "सिलिकॉन उत्पाद, स्प्रेडर, वेटिंग एजेंट और प्राकृतिक पीक संरक्षण समाधान।",
@@ -37,7 +49,11 @@ export const CATEGORIES = [
   },
   {
     id: "water-soluble",
-    name: { en: "Water Soluble Fertilizers", hi: "जलघुलनशील उर्वरक", mr: "पाण्यात विरघळणारी खते" },
+    name: {
+      en: "Water Soluble Fertilizers",
+      hi: "जलघुलनशील उर्वरक",
+      mr: "पाण्यात विरघळणारी खते",
+    },
     desc: {
       en: "Fully water soluble fertilizers for drip irrigation and fertigation.",
       hi: "ड्रिप सिंचाई और फर्टिगेशन के लिए पूर्ण जलघुलनशील उर्वरक।",
@@ -56,10 +72,26 @@ export const CATEGORIES = [
 ];
 
 export const APPLICATIONS = [
-  { id: "foliar", name: { en: "Foliar Spray", hi: "पत्तों पर छिड़काव", mr: "पानांवर फवारणी" } },
-  { id: "drip", name: { en: "Drip Irrigation", hi: "ड्रिप सिंचाई", mr: "ठिबक सिंचन" } },
-  { id: "soil", name: { en: "Soil Application", hi: "मिट्टी में प्रयोग", mr: "मातीत वापर" } },
-  { id: "seed", name: { en: "Seed Treatment / Dipping", hi: "बीज उपचार / डुबाई", mr: "बियाणे उपचार / बुडवणे" } },
+  {
+    id: "foliar",
+    name: { en: "Foliar Spray", hi: "पत्तों पर छिड़काव", mr: "पानांवर फवारणी" },
+  },
+  {
+    id: "drip",
+    name: { en: "Drip Irrigation", hi: "ड्रिप सिंचाई", mr: "ठिबक सिंचन" },
+  },
+  {
+    id: "soil",
+    name: { en: "Soil Application", hi: "मिट्टी में प्रयोग", mr: "मातीत वापर" },
+  },
+  {
+    id: "seed",
+    name: {
+      en: "Seed Treatment / Dipping",
+      hi: "बीज उपचार / डुबाई",
+      mr: "बियाणे उपचार / बुडवणे",
+    },
+  },
 ];
 
 const I = (slug) => `/products/${slug}.webp`;
@@ -81,12 +113,39 @@ export const PRODUCTS = [
       mr: "बलवान हे अमीनो आम्ल व सेंद्रिय घटकांचे फॉर्म्युलेशन आहे — अन्नद्रव्यांचे शोषण, पाणी साठवण क्षमता, प्रकाशसंश्लेषण व कार्बोहायड्रेट निर्मिती वाढवते आणि पाने दीर्घकाळ हिरवी ठेवते.",
     },
     benefits: {
-      en: ["Increases photosynthesis and carbohydrate production", "Improves root aeration and water holding capability", "Delays leaf senescence for a longer green crop"],
-      hi: ["प्रकाश संश्लेषण और कार्बोहाइड्रेट उत्पादन बढ़ाता है", "जड़ों का वायु संचार और जल धारण क्षमता सुधारता है", "पत्तों को देर तक हरा-भरा रखता है"],
-      mr: ["प्रकाशसंश्लेषण व कार्बोहायड्रेट निर्मिती वाढवते", "मुळांचा वायु संचार व पाणी साठवण क्षमता सुधारते", "पाने दीर्घकाळ हिरवीगार ठेवते"],
+      en: [
+        "Increases photosynthesis and carbohydrate production",
+        "Improves root aeration and water holding capability",
+        "Delays leaf senescence for a longer green crop",
+      ],
+      hi: [
+        "प्रकाश संश्लेषण और कार्बोहाइड्रेट उत्पादन बढ़ाता है",
+        "जड़ों का वायु संचार और जल धारण क्षमता सुधारता है",
+        "पत्तों को देर तक हरा-भरा रखता है",
+      ],
+      mr: [
+        "प्रकाशसंश्लेषण व कार्बोहायड्रेट निर्मिती वाढवते",
+        "मुळांचा वायु संचार व पाणी साठवण क्षमता सुधारते",
+        "पाने दीर्घकाळ हिरवीगार ठेवते",
+      ],
     },
-    crops: ["Paddy", "Sugarcane", "Grapes", "Banana", "Potato", "Onion", "Chilli", "Turmeric", "Flowers", "Vegetables", "Cardamom", "Pulses", "Fruits"],
-    composition: "Amino Acid 20.00%, Organic Matter 49.00%, Aqueous Media 31.00%",
+    crops: [
+      "Paddy",
+      "Sugarcane",
+      "Grapes",
+      "Banana",
+      "Potato",
+      "Onion",
+      "Chilli",
+      "Turmeric",
+      "Flowers",
+      "Vegetables",
+      "Cardamom",
+      "Pulses",
+      "Fruits",
+    ],
+    composition:
+      "Amino Acid 20.00%, Organic Matter 49.00%, Aqueous Media 31.00%",
     application: ["foliar", "drip"],
     dosage: {
       en: "Foliar spray: 2.5–3 ml per litre of water. Drip irrigation: 3–5 litres per acre depending on crop stage.",
@@ -111,11 +170,36 @@ export const PRODUCTS = [
       mr: "न्यूट्रोल डीएफ हे ठिबक सिंचन व फवारणीसाठी द्रव सूक्ष्म अन्नद्रव्य मिश्रण आहे — झिंक, कॉपर, लोह, मॅंगनीज, बोरॉन व मोलिब्डेनम संतुलित प्रमाणात.",
     },
     benefits: {
-      en: ["Complete six-micronutrient supply through drip", "Corrects multiple deficiencies in one application", "Mixes with almost all spray fertilizers"],
-      hi: ["ड्रिप से छह सूक्ष्म पोषकों की पूरी आपूर्ति", "एक ही उपयोग में कई कमियाँ दूर करता है", "लगभग सभी स्प्रे उर्वरकों के साथ मिल सकता है"],
-      mr: ["ठिबकेद्वारे सहा सूक्ष्म अन्नद्रव्यांचा पूर्ण पुरवठा", "एकाच वापरात अनेक कमतरता दूर करते", "जवळजवळ सर्व फवारणी खतांसोबत मिसळता येते"],
+      en: [
+        "Complete six-micronutrient supply through drip",
+        "Corrects multiple deficiencies in one application",
+        "Mixes with almost all spray fertilizers",
+      ],
+      hi: [
+        "ड्रिप से छह सूक्ष्म पोषकों की पूरी आपूर्ति",
+        "एक ही उपयोग में कई कमियाँ दूर करता है",
+        "लगभग सभी स्प्रे उर्वरकों के साथ मिल सकता है",
+      ],
+      mr: [
+        "ठिबकेद्वारे सहा सूक्ष्म अन्नद्रव्यांचा पूर्ण पुरवठा",
+        "एकाच वापरात अनेक कमतरता दूर करते",
+        "जवळजवळ सर्व फवारणी खतांसोबत मिसळता येते",
+      ],
     },
-    crops: ["Tomato", "Capsicum", "Grapes", "Pomegranate", "Sugarcane", "Cotton", "Wheat", "Paddy", "Oilseeds", "Flowers", "Vegetables", "Fruits"],
+    crops: [
+      "Tomato",
+      "Capsicum",
+      "Grapes",
+      "Pomegranate",
+      "Sugarcane",
+      "Cotton",
+      "Wheat",
+      "Paddy",
+      "Oilseeds",
+      "Flowers",
+      "Vegetables",
+      "Fruits",
+    ],
     composition: "Zn 3%, Cu 1%, Fe 2.5%, Mn 1%, B 0.5%, Mo 0.1% (w/w)",
     application: ["drip", "foliar"],
     dosage: {
@@ -141,12 +225,25 @@ export const PRODUCTS = [
       mr: "प्रो-96 हे संशोधनातून विकसित विषमुक्त उत्पादन आहे — सक्रिय फॉस्फरस व पोटॅशयुक्त. हवामान तणावाविरुद्ध पिकाची प्रतिकारशक्ती वाढवते, डाउनी मिल्ड्यू, ब्राउन रॉट, मुळकुज यांसारखे रोग रोखते आणि बागांना नवजीवन देते.",
     },
     benefits: {
-      en: ["Environmentally friendly and residue free", "Effectively prevents major orchard diseases", "Improves grape size, colour, sweetness and storage quality"],
-      hi: ["पर्यावरण हितैषी और अवशेष-मुक्त", "बागों के प्रमुख रोगों की असरदार रोकथाम", "अंगूर का आकार, रंग, मिठास और भंडारण गुणवत्ता सुधारता है"],
-      mr: ["पर्यावरणपूरक व अवशेषमुक्त", "बागांतील प्रमुख रोगांची प्रभावी प्रतिबंध", "द्राक्षांचा आकार, रंग, गोडी व साठवण गुणवत्ता सुधारते"],
+      en: [
+        "Environmentally friendly and residue free",
+        "Effectively prevents major orchard diseases",
+        "Improves grape size, colour, sweetness and storage quality",
+      ],
+      hi: [
+        "पर्यावरण हितैषी और अवशेष-मुक्त",
+        "बागों के प्रमुख रोगों की असरदार रोकथाम",
+        "अंगूर का आकार, रंग, मिठास और भंडारण गुणवत्ता सुधारता है",
+      ],
+      mr: [
+        "पर्यावरणपूरक व अवशेषमुक्त",
+        "बागांतील प्रमुख रोगांची प्रभावी प्रतिबंध",
+        "द्राक्षांचा आकार, रंग, गोडी व साठवण गुणवत्ता सुधारते",
+      ],
     },
     crops: ["Grapes", "Fruits", "Vegetables", "All Crops"],
-    composition: "Active phosphorus supplemented with active potash (research formulation)",
+    composition:
+      "Active phosphorus supplemented with active potash (research formulation)",
     application: ["foliar"],
     dosage: {
       en: "First spray: 4 g per litre of water; subsequent sprays: 2–3 g per litre. Use 5–7 kg per acre during the season. Do not mix with spreaders or other chemicals.",
@@ -156,29 +253,46 @@ export const PRODUCTS = [
     packaging: ["Information to be updated"],
   },
   {
-    id: "tej",
-    name: "Tej",
+    id: "tez",
+    name: "Tez",
     category: "biostimulants",
-    image: I("tej"),
+    image: I("tez"),
     tagline: {
       en: "Natural bio-stimulant and anti-stress agent",
       hi: "प्राकृतिक बायो-स्टिम्युलेंट व तनाव-रोधी",
       mr: "नैसर्गिक बायो-स्टिम्युलंट व ताण-रोधक",
     },
     description: {
-      en: "Tej is a unique natural-origin bio-stimulant with multiple activities — plant bio-stimulant, anti-stress agent, nutrient equilibration and enhancer of enzymatic reactions for a tremendous boost in quality and quantity of produce.",
+      en: "Tez is a unique natural-origin bio-stimulant with multiple activities — plant bio-stimulant, anti-stress agent, nutrient equilibration and enhancer of enzymatic reactions for a tremendous boost in quality and quantity of produce.",
       hi: "तेज प्राकृतिक मूल का अनूठा बायो-स्टिम्युलेंट है — पौध उत्तेजक, तनाव-रोधी, पोषक संतुलन और एन्ज़ाइम क्रिया वर्धक — फसल की गुणवत्ता व मात्रा दोनों में ज़बरदस्त बढ़ोतरी के लिए।",
       mr: "तेज हे नैसर्गिक मूलचे अद्वितीय बायो-स्टिम्युलंट आहे — वनस्पती उत्तेजक, ताण-रोधक, अन्नद्रव्य संतुलन व एन्झाइम क्रिया वर्धक — पिकाच्या दर्जा व प्रमाणात लक्षणीय वाढीसाठी.",
     },
     benefits: {
-      en: ["Acts as bio-stimulant and anti-stress agent", "Improves uptake of micro and macro elements", "Boosts quality and quantity of produce"],
-      hi: ["बायो-स्टिम्युलेंट व तनाव-रोधी का काम करता है", "सूक्ष्म व प्रमुख पोषकों का अवशोषण सुधारता है", "उत्पादन की गुणवत्ता व मात्रा बढ़ाता है"],
-      mr: ["बायो-स्टिम्युलंट व ताण-रोधक म्हणून कार्य करते", "सूक्ष्म व प्रमुख अन्नद्रव्यांचे शोषण सुधारते", "उत्पादनाचा दर्जा व प्रमाण वाढवते"],
+      en: [
+        "Acts as bio-stimulant and anti-stress agent",
+        "Improves uptake of micro and macro elements",
+        "Boosts quality and quantity of produce",
+      ],
+      hi: [
+        "बायो-स्टिम्युलेंट व तनाव-रोधी का काम करता है",
+        "सूक्ष्म व प्रमुख पोषकों का अवशोषण सुधारता है",
+        "उत्पादन की गुणवत्ता व मात्रा बढ़ाता है",
+      ],
+      mr: [
+        "बायो-स्टिम्युलंट व ताण-रोधक म्हणून कार्य करते",
+        "सूक्ष्म व प्रमुख अन्नद्रव्यांचे शोषण सुधारते",
+        "उत्पादनाचा दर्जा व प्रमाण वाढवते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Organic fraction derived from D. Amino E. H. bio enzyme 60%, associated manufacturing derivatives QS, aqueous diluent — Total 100%",
+    composition:
+      "Organic fraction derived from D. Amino E. H. bio enzyme 60%, associated manufacturing derivatives QS, aqueous diluent — Total 100%",
     application: ["foliar"],
-    dosage: { en: "Information to be updated", hi: "जानकारी शीघ्र अपडेट की जाएगी", mr: "माहिती लवकरच अपडेट केली जाईल" },
+    dosage: {
+      en: "Information to be updated",
+      hi: "जानकारी शीघ्र अपडेट की जाएगी",
+      mr: "माहिती लवकरच अपडेट केली जाईल",
+    },
     packaging: ["Information to be updated"],
   },
   {
@@ -197,12 +311,32 @@ export const PRODUCTS = [
       mr: "झूम हे पर्यावरणपूरक, पाण्यात विरघळणारे, विषमुक्त सेंद्रिय बायो-स्टिम्युलंट आहे — सर्व पिके, भाज्या व फळांसाठी, विशेषतः द्राक्षे, डाळिंब व मिरचीसाठी. सक्रिय पेशींच्या विभाजनास चालना देते व अवशेष सोडत नाही.",
     },
     benefits: {
-      en: ["Safe for plants, animals and humans", "Leaves no residues", "Specially suited to grapes, pomegranate and chilli"],
-      hi: ["पौधों, पशुओं और मनुष्यों के लिए सुरक्षित", "कोई अवशेष नहीं छोड़ता", "अंगूर, अनार व मिर्ची के लिए विशेष उपयुक्त"],
-      mr: ["वनस्पती, प्राणी व मनुष्यांसाठी सुरक्षित", "अवशेष सोडत नाही", "द्राक्षे, डाळिंब व मिरचीसाठी विशेष योग्य"],
+      en: [
+        "Safe for plants, animals and humans",
+        "Leaves no residues",
+        "Specially suited to grapes, pomegranate and chilli",
+      ],
+      hi: [
+        "पौधों, पशुओं और मनुष्यों के लिए सुरक्षित",
+        "कोई अवशेष नहीं छोड़ता",
+        "अंगूर, अनार व मिर्ची के लिए विशेष उपयुक्त",
+      ],
+      mr: [
+        "वनस्पती, प्राणी व मनुष्यांसाठी सुरक्षित",
+        "अवशेष सोडत नाही",
+        "द्राक्षे, डाळिंब व मिरचीसाठी विशेष योग्य",
+      ],
     },
-    crops: ["Grapes", "Pomegranate", "Chilli", "Vegetables", "Fruits", "All Crops"],
-    composition: "L-Crystaline derivative of Amino Acid 10%, Folic Acid 2%, Aqua 88%",
+    crops: [
+      "Grapes",
+      "Pomegranate",
+      "Chilli",
+      "Vegetables",
+      "Fruits",
+      "All Crops",
+    ],
+    composition:
+      "L-Crystaline derivative of Amino Acid 10%, Folic Acid 2%, Aqua 88%",
     application: ["foliar", "seed"],
     dosage: {
       en: "Dipping: 1 ml per litre of water. Spray: 100 ml in 100 litres of water.",
@@ -227,14 +361,31 @@ export const PRODUCTS = [
       mr: "ॲक्टिव्हा हे अमीनो आम्ल आधारित परिणामकारक सेंद्रिय प्लांट टॉनिक आहे — सर्व प्रकारच्या भाजीपाला व फळपिकांच्या वाढीसाठी उपयुक्त.",
     },
     benefits: {
-      en: ["16 types of amino acids for balanced growth", "Enriched with nicotinic acid, folic acid and B vitamins", "Ideal for vegetable and fruit crops"],
-      hi: ["संतुलित वृद्धि के लिए 16 प्रकार के अमीनो एसिड", "निकोटिनिक एसिड, फोलिक एसिड व बी विटामिन से समृद्ध", "सब्ज़ी व फल फसलों के लिए उत्तम"],
-      mr: ["संतुलित वाढीसाठी 16 प्रकारची अमीनो आम्ले", "निकोटिनिक आम्ल, फोलिक आम्ल व बी जीवनसत्त्वांनी समृद्ध", "भाजीपाला व फळपिकांसाठी उत्तम"],
+      en: [
+        "16 types of amino acids for balanced growth",
+        "Enriched with nicotinic acid, folic acid and B vitamins",
+        "Ideal for vegetable and fruit crops",
+      ],
+      hi: [
+        "संतुलित वृद्धि के लिए 16 प्रकार के अमीनो एसिड",
+        "निकोटिनिक एसिड, फोलिक एसिड व बी विटामिन से समृद्ध",
+        "सब्ज़ी व फल फसलों के लिए उत्तम",
+      ],
+      mr: [
+        "संतुलित वाढीसाठी 16 प्रकारची अमीनो आम्ले",
+        "निकोटिनिक आम्ल, फोलिक आम्ल व बी जीवनसत्त्वांनी समृद्ध",
+        "भाजीपाला व फळपिकांसाठी उत्तम",
+      ],
     },
     crops: ["Vegetables", "Fruits"],
-    composition: "Amino Acids (16 types) 9000 P.P.M., Nicotinic Acid 20%, Folic 2500 P.P.M., Vit. B1, B2, B6 500 P.P.M., Dissolving Agent — Rest",
+    composition:
+      "Amino Acids (16 types) 9000 P.P.M., Nicotinic Acid 20%, Folic 2500 P.P.M., Vit. B1, B2, B6 500 P.P.M., Dissolving Agent — Rest",
     application: ["foliar"],
-    dosage: { en: "Information to be updated", hi: "जानकारी शीघ्र अपडेट की जाएगी", mr: "माहिती लवकरच अपडेट केली जाईल" },
+    dosage: {
+      en: "Information to be updated",
+      hi: "जानकारी शीघ्र अपडेट की जाएगी",
+      mr: "माहिती लवकरच अपडेट केली जाईल",
+    },
     packaging: ["Information to be updated"],
   },
   {
@@ -253,12 +404,25 @@ export const PRODUCTS = [
       mr: "कॅल्सिनेट हे सीवीड अर्क आधारित बायो-स्टिम्युलंट आहे — निवडक समुद्री शैवालांपासून बनवलेला नैसर्गिक वाढ वर्धक. जैव-सक्रिय घटकांनी समृद्ध — पिकाची ताकद, वाढ व ताण प्रतिरोध वाढवते.",
     },
     benefits: {
-      en: ["Enhances seed germination and early seedling growth", "Stimulates flowering, fruit setting and fruit development", "Improves tolerance against drought, salinity, heat and pest stress"],
-      hi: ["बीज अंकुरण व प्रारंभिक वृद्धि बढ़ाता है", "फूल, फल जड़ना व फल विकास को बढ़ावा", "सूखा, लवणता, गर्मी व कीट तनाव सहन क्षमता बढ़ाता है"],
-      mr: ["बियाणे उगवण व सुरुवातीची वाढ सुधारते", "फुलोरा, फळधारणा व फळवाढीस चालना", "दुष्काळ, क्षारता, उष्णता व कीड ताण सहनशक्ती वाढवते"],
+      en: [
+        "Enhances seed germination and early seedling growth",
+        "Stimulates flowering, fruit setting and fruit development",
+        "Improves tolerance against drought, salinity, heat and pest stress",
+      ],
+      hi: [
+        "बीज अंकुरण व प्रारंभिक वृद्धि बढ़ाता है",
+        "फूल, फल जड़ना व फल विकास को बढ़ावा",
+        "सूखा, लवणता, गर्मी व कीट तनाव सहन क्षमता बढ़ाता है",
+      ],
+      mr: [
+        "बियाणे उगवण व सुरुवातीची वाढ सुधारते",
+        "फुलोरा, फळधारणा व फळवाढीस चालना",
+        "दुष्काळ, क्षारता, उष्णता व कीड ताण सहनशक्ती वाढवते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Total organic matter 17% w/w (20% W/V) — sugar alcohols, amino acids, organic acids, carbohydrates, vitamins and anti-oxidants; Concentrated Liquid Calcium 11%",
+    composition:
+      "Total organic matter 17% w/w (20% W/V) — sugar alcohols, amino acids, organic acids, carbohydrates, vitamins and anti-oxidants; Concentrated Liquid Calcium 11%",
     application: ["foliar", "drip", "soil"],
     dosage: {
       en: "Foliar spray: 2.0–3.0 ml per litre of water. Drip/soil application: 500–1000 ml per acre, depending on crop and growth stage.",
@@ -283,12 +447,25 @@ export const PRODUCTS = [
       mr: "बोरोनेट हे सीवीड अर्क आधारित बायो-स्टिम्युलंट व नैसर्गिक वाढ वर्धक आहे. सेंद्रिय घटक, अमीनो आम्ले, कार्बोहायड्रेट, जीवनसत्त्वे व नैसर्गिक वाढ नियामकांनी युक्त — पिकाची ताकद, वाढ व ताण प्रतिरोध वाढवते.",
     },
     benefits: {
-      en: ["Enhances seed germination and root development", "Stimulates flowering and fruit setting", "Increases yield, quality and shelf life of produce"],
-      hi: ["बीज अंकुरण व जड़ विकास बढ़ाता है", "फूल व फल जड़ने को बढ़ावा", "उपज, गुणवत्ता व भंडारण आयु बढ़ाता है"],
-      mr: ["बियाणे उगवण व मूळविकास वाढवते", "फुलोरा व फळधारणेस चालना", "उत्पादन, दर्जा व साठवण आयुष्य वाढवते"],
+      en: [
+        "Enhances seed germination and root development",
+        "Stimulates flowering and fruit setting",
+        "Increases yield, quality and shelf life of produce",
+      ],
+      hi: [
+        "बीज अंकुरण व जड़ विकास बढ़ाता है",
+        "फूल व फल जड़ने को बढ़ावा",
+        "उपज, गुणवत्ता व भंडारण आयु बढ़ाता है",
+      ],
+      mr: [
+        "बियाणे उगवण व मूळविकास वाढवते",
+        "फुलोरा व फळधारणेस चालना",
+        "उत्पादन, दर्जा व साठवण आयुष्य वाढवते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Total organic matter 17% w/w (17% W/V) — sugar alcohols, amino acids, organic acids, carbohydrates, vitamins and anti-oxidants",
+    composition:
+      "Total organic matter 17% w/w (17% W/V) — sugar alcohols, amino acids, organic acids, carbohydrates, vitamins and anti-oxidants",
     application: ["foliar", "drip", "soil"],
     dosage: {
       en: "Foliar spray: 2.0–3.0 ml per litre of water. Drip/soil application: 500–1000 ml per acre, depending on crop and growth stage.",
@@ -313,12 +490,33 @@ export const PRODUCTS = [
       mr: "झिंकोनेट हे 39.5% मूलद्रव्य झिंक असलेले अत्यंत संहत द्रव झिंक ऑक्साइड सस्पेन्शन आहे — पिकांतील झिंकची कमतरता पटापट दूर करण्यासाठी व रोकण्यासाठी.",
     },
     benefits: {
-      en: ["Corrects hidden and visible zinc deficiency (stunted growth, yellowing, poor grain filling)", "Enhances photosynthesis and protein synthesis", "Promotes better flowering, fruiting and yield"],
-      hi: ["छुपी व दिखने वाली जिंक की कमी दूर करता है (अवरुद्ध वृद्धि, पीलापन, दाना न भरना)", "प्रकाश संश्लेषण व प्रोटीन संश्लेषण बढ़ाता है", "बेहतर फूल, फल व उपज देता है"],
-      mr: ["लपलेली व दिसणारी झिंक कमतरता दूर करते (खुंटलेली वाढ, पिवळसरपणा, दाणे न भरणे)", "प्रकाशसंश्लेषण व प्रथिन निर्मिती वाढवते", "चांगला फुलोरा, फळे व उत्पादन देते"],
+      en: [
+        "Corrects hidden and visible zinc deficiency (stunted growth, yellowing, poor grain filling)",
+        "Enhances photosynthesis and protein synthesis",
+        "Promotes better flowering, fruiting and yield",
+      ],
+      hi: [
+        "छुपी व दिखने वाली जिंक की कमी दूर करता है (अवरुद्ध वृद्धि, पीलापन, दाना न भरना)",
+        "प्रकाश संश्लेषण व प्रोटीन संश्लेषण बढ़ाता है",
+        "बेहतर फूल, फल व उपज देता है",
+      ],
+      mr: [
+        "लपलेली व दिसणारी झिंक कमतरता दूर करते (खुंटलेली वाढ, पिवळसरपणा, दाणे न भरणे)",
+        "प्रकाशसंश्लेषण व प्रथिन निर्मिती वाढवते",
+        "चांगला फुलोरा, फळे व उत्पादन देते",
+      ],
     },
-    crops: ["Cereals", "Pulses", "Oilseeds", "Fruits", "Vegetables", "Sugarcane", "Cotton"],
-    composition: "Dense suspension concentrate of liquid Zinc (as Zn) 39.5% min by weight, pH (5% solution) 9.0 ± 1",
+    crops: [
+      "Cereals",
+      "Pulses",
+      "Oilseeds",
+      "Fruits",
+      "Vegetables",
+      "Sugarcane",
+      "Cotton",
+    ],
+    composition:
+      "Dense suspension concentrate of liquid Zinc (as Zn) 39.5% min by weight, pH (5% solution) 9.0 ± 1",
     application: ["foliar", "soil", "drip"],
     dosage: {
       en: "Foliar spray: 200–300 ml per acre diluted in 200 litres of water. Soil application/fertigation: 1–2 litres per acre depending on soil zinc status and crop.",
@@ -343,12 +541,25 @@ export const PRODUCTS = [
       mr: "जेआर केल्प ग्रीन हे नैसर्गिक ताण-प्रतिरोधी केल्प प्रजातींपासून (Ecklonia Maxima) बनवलेले सेंद्रिय उत्पादन आहे. अजैविक ताण प्रतिरोध वाढवते, मुळांची वाढ प्रोत्साहित करते आणि कोल्ड एक्स्ट्रॅक्शन प्रक्रियेमुळे ऑक्सिन व सायटोकिनिन जास्त प्रमाणात टिकतात.",
     },
     benefits: {
-      en: ["Increases crop abiotic stress resistance", "Promotes root and shoot development with natural auxins and cytokinins", "Compatible with all kinds of agro chemicals"],
-      hi: ["फसल की अजैविक तनाव प्रतिरोध क्षमता बढ़ाता है", "प्राकृतिक ऑक्सिन व साइटोकिनिन से जड़ व तने का विकास", "सभी कृषि रसायनों के साथ संगत"],
-      mr: ["पिकाची अजैविक ताण प्रतिकारक्षमता वाढवते", "नैसर्गिक ऑक्सिन व सायटोकिनिनने मुळे व खोड विकास", "सर्व कृषी रसायनांशी सुसंगत"],
+      en: [
+        "Increases crop abiotic stress resistance",
+        "Promotes root and shoot development with natural auxins and cytokinins",
+        "Compatible with all kinds of agro chemicals",
+      ],
+      hi: [
+        "फसल की अजैविक तनाव प्रतिरोध क्षमता बढ़ाता है",
+        "प्राकृतिक ऑक्सिन व साइटोकिनिन से जड़ व तने का विकास",
+        "सभी कृषि रसायनों के साथ संगत",
+      ],
+      mr: [
+        "पिकाची अजैविक ताण प्रतिकारक्षमता वाढवते",
+        "नैसर्गिक ऑक्सिन व सायटोकिनिनने मुळे व खोड विकास",
+        "सर्व कृषी रसायनांशी सुसंगत",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Kelp (Ecklonia Maxima) extract 20%, Proteins 10%, D.M. Aqua Q.S. — Total 100%",
+    composition:
+      "Kelp (Ecklonia Maxima) extract 20%, Proteins 10%, D.M. Aqua Q.S. — Total 100%",
     application: ["drip", "foliar"],
     dosage: {
       en: "Drip: 2 litres per acre. Spray: 1.5–2 ml per litre of water.",
@@ -373,12 +584,25 @@ export const PRODUCTS = [
       mr: "रॉयल ग्रेप्स हे पर्यावरणपूरक बायो-स्टिम्युलंट आहे — सर्व पिके, भाज्या व फळांसाठी, विशेषतः द्राक्षे, डाळिंब व मिरचीसाठी. पाण्यात विरघळणारे, विषमुक्त व अवशेषमुक्त.",
     },
     benefits: {
-      en: ["Divides active cells for vigorous growth", "Water soluble and residue free", "Ideal for export-quality grape production"],
-      hi: ["सक्रिय कोशिका विभाजन से जोरदार वृद्धि", "जलघुलनशील व अवशेष-मुक्त", "निर्यात गुणवत्ता की अंगूर खेती के लिए उत्तम"],
-      mr: ["सक्रिय पेशी विभाजनाने जोरदार वाढ", "पाण्यात विरघळणारे व अवशेषमुक्त", "निर्यात दर्जाच्या द्राक्ष उत्पादनासाठी उत्तम"],
+      en: [
+        "Divides active cells for vigorous growth",
+        "Water soluble and residue free",
+        "Ideal for export-quality grape production",
+      ],
+      hi: [
+        "सक्रिय कोशिका विभाजन से जोरदार वृद्धि",
+        "जलघुलनशील व अवशेष-मुक्त",
+        "निर्यात गुणवत्ता की अंगूर खेती के लिए उत्तम",
+      ],
+      mr: [
+        "सक्रिय पेशी विभाजनाने जोरदार वाढ",
+        "पाण्यात विरघळणारे व अवशेषमुक्त",
+        "निर्यात दर्जाच्या द्राक्ष उत्पादनासाठी उत्तम",
+      ],
     },
     crops: ["Grapes", "Pomegranate", "Chilli", "Vegetables", "Fruits"],
-    composition: "Protein Hydrolyzed 0.04%, Ascophyllum Nodosum 10%, Carboxylic Acid 5%, Vitamins B1 B2 B6 B12 2500 ppm — Total 100%",
+    composition:
+      "Protein Hydrolyzed 0.04%, Ascophyllum Nodosum 10%, Carboxylic Acid 5%, Vitamins B1 B2 B6 B12 2500 ppm — Total 100%",
     application: ["foliar", "seed"],
     dosage: {
       en: "Spray: 1 ml per litre of water. Dipping: 100 ml in 100 litres of water.",
@@ -403,12 +627,25 @@ export const PRODUCTS = [
       mr: "5-स्टार पूर्णपणे नैसर्गिक घटकांपासून बनवले आहे — वनस्पती अर्क, जीवनसत्त्वे, ऑक्सिन व सायटोकिनिन. द्राक्षे, डाळिंब व सर्व फळे-भाज्यांचा आकार, रंग, गोडी, वजन व दर्जा वाढवते आणि फुले-फळे गळणे व फाटणे कमी करते.",
     },
     benefits: {
-      en: ["Improves fruit size, colour and sugar content", "Reduces flower drop, fruit drop and fruit cracking", "Hardens grape berries and strengthens stalks"],
-      hi: ["फल का आकार, रंग व मिठास सुधारता है", "फूल व फल गिरना और फल फटना कम करता है", "अंगूर के दाने सख्त व डंठल मजबूत करता है"],
-      mr: ["फळांचा आकार, रंग व गोडी सुधारते", "फुलगळ, फळगळ व फळफाट कमी करते", "द्राक्षांचे दाणे घट्ट व देठ मजबूत करते"],
+      en: [
+        "Improves fruit size, colour and sugar content",
+        "Reduces flower drop, fruit drop and fruit cracking",
+        "Hardens grape berries and strengthens stalks",
+      ],
+      hi: [
+        "फल का आकार, रंग व मिठास सुधारता है",
+        "फूल व फल गिरना और फल फटना कम करता है",
+        "अंगूर के दाने सख्त व डंठल मजबूत करता है",
+      ],
+      mr: [
+        "फळांचा आकार, रंग व गोडी सुधारते",
+        "फुलगळ, फळगळ व फळफाट कमी करते",
+        "द्राक्षांचे दाणे घट्ट व देठ मजबूत करते",
+      ],
     },
     crops: ["Grapes", "Pomegranate", "Fruits", "Vegetables"],
-    composition: "Mineral Mixture 20%, Alginic Acid 13%, K2O 10%, Other 57% — Total 100%",
+    composition:
+      "Mineral Mixture 20%, Alginic Acid 13%, K2O 10%, Other 57% — Total 100%",
     application: ["drip"],
     dosage: {
       en: "Drip application: 5–10 ml per plant for grapes or other fruits and vegetables. Shake well before use.",
@@ -433,12 +670,25 @@ export const PRODUCTS = [
       mr: "मिल्टन नैसर्गिक घटकांपासून बनवले आहे आणि मीलीबग व मावा यांवर परिणामकारक आहे. 100% पर्यावरणपूरक सेंद्रिय उत्पादन — औषधी वनस्पतींच्या तेल व अर्कांपासून तयार, काढणीपर्यंत वापरता येते.",
     },
     benefits: {
-      en: ["Effective against mealybugs and aphids", "100% eco-friendly organic product", "Can be used right up to harvesting"],
-      hi: ["मीलीबग व एफिड्स के विरुद्ध असरदार", "100% पर्यावरण-हितैषी जैविक उत्पाद", "कटाई तक उपयोग करने योग्य"],
-      mr: ["मीलीबग व मावा यांवर परिणामकारक", "100% पर्यावरणपूरक सेंद्रिय उत्पादन", "काढणीपर्यंत वापरण्यायोग्य"],
+      en: [
+        "Effective against mealybugs and aphids",
+        "100% eco-friendly organic product",
+        "Can be used right up to harvesting",
+      ],
+      hi: [
+        "मीलीबग व एफिड्स के विरुद्ध असरदार",
+        "100% पर्यावरण-हितैषी जैविक उत्पाद",
+        "कटाई तक उपयोग करने योग्य",
+      ],
+      mr: [
+        "मीलीबग व मावा यांवर परिणामकारक",
+        "100% पर्यावरणपूरक सेंद्रिय उत्पादन",
+        "काढणीपर्यंत वापरण्यायोग्य",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Ginger Extract 2.0%, Plant Extract 10.0%, Non-ionic surfactant 10.0%, Filler oil and extract Q.S. — Total 100%",
+    composition:
+      "Ginger Extract 2.0%, Plant Extract 10.0%, Non-ionic surfactant 10.0%, Filler oil and extract Q.S. — Total 100%",
     application: ["foliar"],
     dosage: {
       en: "Spray: 2–3 ml per litre of water. Please check agrochemical compatibility before use.",
@@ -463,12 +713,35 @@ export const PRODUCTS = [
       mr: "न्यूट्रस कॉम्बी हे धान्ये, कडधान्ये, सोयाबीन, भुईमूग, रोकडी पिके, भाजीपाला, फळझाडे व द्राक्षांसाठी किलेटेड (EDTA) सूक्ष्म अन्नद्रव्य मिश्रण खत आहे — प्रत्येक टप्प्यावर वाढ व अन्नद्रव्य शोषणासाठी.",
     },
     benefits: {
-      en: ["One spray solution for multiple micronutrient needs", "Crop-stage-wise spray schedule on the label", "Suitable across cereals, pulses, vegetables and fruit trees"],
-      hi: ["कई सूक्ष्म पोषकों की जरूरत का एक ही समाधान", "फसल-अवस्था अनुसार छिड़काव कार्यक्रम", "अनाज, दालें, सब्जियाँ व फलदार वृक्षों के लिए उपयुक्त"],
-      mr: ["अनेक सूक्ष्म अन्नद्रव्यांचा एकच उपाय", "पीक-अवस्थेनुसार फवारणी कार्यक्रम", "धान्ये, कडधान्ये, भाजीपाला व फळझाडांसाठी योग्य"],
+      en: [
+        "One spray solution for multiple micronutrient needs",
+        "Crop-stage-wise spray schedule on the label",
+        "Suitable across cereals, pulses, vegetables and fruit trees",
+      ],
+      hi: [
+        "कई सूक्ष्म पोषकों की जरूरत का एक ही समाधान",
+        "फसल-अवस्था अनुसार छिड़काव कार्यक्रम",
+        "अनाज, दालें, सब्जियाँ व फलदार वृक्षों के लिए उपयुक्त",
+      ],
+      mr: [
+        "अनेक सूक्ष्म अन्नद्रव्यांचा एकच उपाय",
+        "पीक-अवस्थेनुसार फवारणी कार्यक्रम",
+        "धान्ये, कडधान्ये, भाजीपाला व फळझाडांसाठी योग्य",
+      ],
     },
-    crops: ["Cereals", "Pulses", "Soybean", "Groundnut", "Cotton", "Sugarcane", "Vegetables", "Fruits", "Grapes"],
-    composition: "Chelated micronutrients (EDTA) — 0.25% spray grade / 1% inorganic micronutrient fertilizer",
+    crops: [
+      "Cereals",
+      "Pulses",
+      "Soybean",
+      "Groundnut",
+      "Cotton",
+      "Sugarcane",
+      "Vegetables",
+      "Fruits",
+      "Grapes",
+    ],
+    composition:
+      "Chelated micronutrients (EDTA) — 0.25% spray grade / 1% inorganic micronutrient fertilizer",
     application: ["foliar"],
     dosage: {
       en: "Spray with 0.25% chelated micronutrients (or 1% inorganic). Cereals/pulses: first spray at flowering, second 15 days later. Soybean/groundnut: 15 and 55 days after sowing. Fruit trees: two sprays March–August. Grapes: two sprays at bud formation.",
@@ -493,12 +766,40 @@ export const PRODUCTS = [
       mr: "न्यूट्रस कॅल्शियम पूर्णपणे पाण्यात विरघळणारे असून त्यात किमान 10% कॅल्शियम EDTA किलेट स्वरूपात आहे. कॅल्शियमच्या कमतरतेमुळे फळे फाटणे व कुजणे रोखते आणि काढणीनंतर फळे-फुले दीर्घकाळ ताजी ठेवते.",
     },
     benefits: {
-      en: ["Prevents fruit cracking, splitting and rotting", "Makes fruit skin firm, flexible and shiny", "Extends post-harvest freshness of fruits and flowers"],
-      hi: ["फलों का फटना, चिरना व सड़ना रोकता है", "फलों का छिलका मजबूत, लचीला व चमकदार बनाता है", "कटाई के बाद ताज़गी लंबे समय तक बनाए रखता है"],
-      mr: ["फळे फाटणे, चिरणे व कुजणे रोखते", "फळांची साल घट्ट, लवचिक व चमकदार करते", "काढणीनंतर ताजेपणा दीर्घकाळ टिकवते"],
+      en: [
+        "Prevents fruit cracking, splitting and rotting",
+        "Makes fruit skin firm, flexible and shiny",
+        "Extends post-harvest freshness of fruits and flowers",
+      ],
+      hi: [
+        "फलों का फटना, चिरना व सड़ना रोकता है",
+        "फलों का छिलका मजबूत, लचीला व चमकदार बनाता है",
+        "कटाई के बाद ताज़गी लंबे समय तक बनाए रखता है",
+      ],
+      mr: [
+        "फळे फाटणे, चिरणे व कुजणे रोखते",
+        "फळांची साल घट्ट, लवचिक व चमकदार करते",
+        "काढणीनंतर ताजेपणा दीर्घकाळ टिकवते",
+      ],
     },
-    crops: ["Grapes", "Sugarcane", "Chilli", "Pomegranate", "Orange", "Cotton", "Rice", "Tea", "Fruits", "Vegetables", "Flowers", "Oilseeds", "Cereals", "Pulses"],
-    composition: "Ca-EDTA — minimum 10% Calcium; relative stability 4.0–9.0 (water-soluble state)",
+    crops: [
+      "Grapes",
+      "Sugarcane",
+      "Chilli",
+      "Pomegranate",
+      "Orange",
+      "Cotton",
+      "Rice",
+      "Tea",
+      "Fruits",
+      "Vegetables",
+      "Flowers",
+      "Oilseeds",
+      "Cereals",
+      "Pulses",
+    ],
+    composition:
+      "Ca-EDTA — minimum 10% Calcium; relative stability 4.0–9.0 (water-soluble state)",
     application: ["foliar", "drip"],
     dosage: {
       en: "Spraying: 0.5–1.0 g per litre of water. Drip irrigation: 0.5–1 kg per acre depending on crop requirement and calcium deficiency.",
@@ -523,11 +824,38 @@ export const PRODUCTS = [
       mr: "न्यूट्रस मॅग्नेशियम (Mg-6% EDTA) मातीत दिल्यास मुळांकडून पटापट शोषले जाते. जोरदार व निरोगी वाढ, पानांचा गडद हिरवा रंग आणि भाजीपाला-फळांची साठवण क्षमता वाढवते.",
     },
     benefits: {
-      en: ["Promotes vigorous and healthy crop growth", "Acts as an inhibitor of mummification in grapes", "Helps maintain the activity of many enzymes"],
-      hi: ["जोरदार व स्वस्थ फसल वृद्धि देता है", "अंगूर में ममीकरण (सूखना) रोकता है", "कई एन्ज़ाइमों की सक्रियता बनाए रखता है"],
-      mr: ["जोरदार व निरोगी पीक वाढ देते", "द्राक्षांमध्ये ममीकरण (दाणे सुकणे) रोखते", "अनेक एन्झाइम्सची सक्रियता टिकवते"],
+      en: [
+        "Promotes vigorous and healthy crop growth",
+        "Acts as an inhibitor of mummification in grapes",
+        "Helps maintain the activity of many enzymes",
+      ],
+      hi: [
+        "जोरदार व स्वस्थ फसल वृद्धि देता है",
+        "अंगूर में ममीकरण (सूखना) रोकता है",
+        "कई एन्ज़ाइमों की सक्रियता बनाए रखता है",
+      ],
+      mr: [
+        "जोरदार व निरोगी पीक वाढ देते",
+        "द्राक्षांमध्ये ममीकरण (दाणे सुकणे) रोखते",
+        "अनेक एन्झाइम्सची सक्रियता टिकवते",
+      ],
     },
-    crops: ["Grapes", "Sugarcane", "Chilli", "Pomegranate", "Orange", "Cotton", "Rice", "Tea", "Fruits", "Vegetables", "Flowers", "Oilseeds", "Cereals", "Pulses"],
+    crops: [
+      "Grapes",
+      "Sugarcane",
+      "Chilli",
+      "Pomegranate",
+      "Orange",
+      "Cotton",
+      "Rice",
+      "Tea",
+      "Fruits",
+      "Vegetables",
+      "Flowers",
+      "Oilseeds",
+      "Cereals",
+      "Pulses",
+    ],
     composition: "Mg-6% EDTA Mg",
     application: ["foliar", "drip", "soil"],
     dosage: {
@@ -553,11 +881,38 @@ export const PRODUCTS = [
       mr: "न्यूट्रस झिंक हे किलेटेड झिंक (Zn-12% EDTA) आहे — फुलगळ कमी करते, फळधारणा वाढवते, फळांचा आकार एकसमान ठेवते आणि पाने बळकट करते. माती व फवारणी दोन्हीसाठी योग्य.",
     },
     benefits: {
-      en: ["Reduces flower drop and increases fruit set", "Maintains uniform size of grapes and other fruits", "Makes leaves strong and healthy"],
-      hi: ["फूल गिरना कम करके फल जड़ना बढ़ाता है", "अंगूर व अन्य फलों का आकार समान रखता है", "पत्तों को मजबूत व स्वस्थ बनाता है"],
-      mr: ["फुलगळ कमी करून फळधारणा वाढवते", "द्राक्षे व इतर फळांचा आकार एकसमान ठेवते", "पाने बळकट व निरोगी करते"],
+      en: [
+        "Reduces flower drop and increases fruit set",
+        "Maintains uniform size of grapes and other fruits",
+        "Makes leaves strong and healthy",
+      ],
+      hi: [
+        "फूल गिरना कम करके फल जड़ना बढ़ाता है",
+        "अंगूर व अन्य फलों का आकार समान रखता है",
+        "पत्तों को मजबूत व स्वस्थ बनाता है",
+      ],
+      mr: [
+        "फुलगळ कमी करून फळधारणा वाढवते",
+        "द्राक्षे व इतर फळांचा आकार एकसमान ठेवते",
+        "पाने बळकट व निरोगी करते",
+      ],
     },
-    crops: ["Grapes", "Sugarcane", "Chilli", "Pomegranate", "Orange", "Cotton", "Rice", "Tea", "Fruits", "Vegetables", "Flowers", "Oilseeds", "Cereals", "Pulses"],
+    crops: [
+      "Grapes",
+      "Sugarcane",
+      "Chilli",
+      "Pomegranate",
+      "Orange",
+      "Cotton",
+      "Rice",
+      "Tea",
+      "Fruits",
+      "Vegetables",
+      "Flowers",
+      "Oilseeds",
+      "Cereals",
+      "Pulses",
+    ],
     composition: "Zn-12% EDTA Zn",
     application: ["foliar", "soil"],
     dosage: {
@@ -583,11 +938,38 @@ export const PRODUCTS = [
       mr: "न्यूट्रस बोरान हे डाय-सोडियम ऑक्टा बोरेट टेट्रा हायड्रेट (B-20%) आहे. पेशी विभाजन व नवीन कोपल्यांस चालना देते, मुळांच्या रोमांमध्ये वाढ करते, कॅल्शियम विरघळण व वहनात मदत करते आणि परागकण कार्यक्षमता वाढवते.",
     },
     benefits: {
-      en: ["Promotes cell division and root hair formation", "Aids calcium and water transport in the plant", "Increases pollen efficiency for better fruit set"],
-      hi: ["कोशिका विभाजन व जड़-रोम निर्मिति बढ़ाता है", "पौधे में कैल्शियम व जल परिवहन में सहायक", "बेहतर फल जड़ने के लिए परागकण दक्षता बढ़ाता है"],
-      mr: ["पेशी विभाजन व मूळरोम निर्मिती वाढवते", "वनस्पतीत कॅल्शियम व पाणी वहनात मदत", "चांगली फळधारणा होण्यासाठी परागकण कार्यक्षमता वाढवते"],
+      en: [
+        "Promotes cell division and root hair formation",
+        "Aids calcium and water transport in the plant",
+        "Increases pollen efficiency for better fruit set",
+      ],
+      hi: [
+        "कोशिका विभाजन व जड़-रोम निर्मिति बढ़ाता है",
+        "पौधे में कैल्शियम व जल परिवहन में सहायक",
+        "बेहतर फल जड़ने के लिए परागकण दक्षता बढ़ाता है",
+      ],
+      mr: [
+        "पेशी विभाजन व मूळरोम निर्मिती वाढवते",
+        "वनस्पतीत कॅल्शियम व पाणी वहनात मदत",
+        "चांगली फळधारणा होण्यासाठी परागकण कार्यक्षमता वाढवते",
+      ],
     },
-    crops: ["Grapes", "Sugarcane", "Chilli", "Pomegranate", "Orange", "Cotton", "Rice", "Tea", "Fruits", "Vegetables", "Flowers", "Oilseeds", "Cereals", "Pulses"],
+    crops: [
+      "Grapes",
+      "Sugarcane",
+      "Chilli",
+      "Pomegranate",
+      "Orange",
+      "Cotton",
+      "Rice",
+      "Tea",
+      "Fruits",
+      "Vegetables",
+      "Flowers",
+      "Oilseeds",
+      "Cereals",
+      "Pulses",
+    ],
     composition: "B-20% (Di-Sodium Octa Borate Tetra Hydrate)",
     application: ["foliar"],
     dosage: {
@@ -613,9 +995,21 @@ export const PRODUCTS = [
       mr: "न्यूट्रस Fe हे लोहाचे आधुनिक EDDHA किलेटेड रूप आहे — ठिबक किंवा मातीवर शिंपडणेद्वारे दिले जाते. pH 8 पेक्षा जास्त असलेल्या चुनखडी मातीतही परिणामकारक, pH 4 ते 11 पर्यंत लोह उपलब्ध ठेवते आणि लोहाच्या कमतरतेचा पिवळसरपणा दूर करते.",
     },
     benefits: {
-      en: ["Works even in calcareous soils above pH 8", "Maintains iron availability from pH 4 to 11", "Eliminates iron chlorosis in problem soils"],
-      hi: ["pH 8 से अधिक चूने वाली मिट्टी में भी असरदार", "pH 4 से 11 तक आयरन उपलब्ध रखता है", "समस्याग्रस्त मिट्टी में आयरन क्लोरोसिस दूर करता है"],
-      mr: ["pH 8 पेक्षा जास्त चुनखडी मातीतही परिणामकारक", "pH 4 ते 11 पर्यंत लोह उपलब्ध ठेवते", "त्रासदायक मातीतील लोहाचा पिवळसरपणा दूर करते"],
+      en: [
+        "Works even in calcareous soils above pH 8",
+        "Maintains iron availability from pH 4 to 11",
+        "Eliminates iron chlorosis in problem soils",
+      ],
+      hi: [
+        "pH 8 से अधिक चूने वाली मिट्टी में भी असरदार",
+        "pH 4 से 11 तक आयरन उपलब्ध रखता है",
+        "समस्याग्रस्त मिट्टी में आयरन क्लोरोसिस दूर करता है",
+      ],
+      mr: [
+        "pH 8 पेक्षा जास्त चुनखडी मातीतही परिणामकारक",
+        "pH 4 ते 11 पर्यंत लोह उपलब्ध ठेवते",
+        "त्रासदायक मातीतील लोहाचा पिवळसरपणा दूर करते",
+      ],
     },
     crops: ["All Crops"],
     composition: "EDDHA Chelated Iron (Fe)",
@@ -643,12 +1037,33 @@ export const PRODUCTS = [
       mr: "न्यूट्रस कॅलिबर किलेटेड कॅल्शियम, मॅग्नेशियम, बोरॉन व झिंकवर आधारित आहे — पिकाच्या प्रत्येक टप्प्यावर परिणामकारक: भरपूर लवकर फुलोरा, फळकुज कमी आणि सुकणे, ममीकरण व फळफाट रोखणे.",
     },
     benefits: {
-      en: ["Promotes abundant and early flowering", "Reduces fruit rot and cracking in grapes, pomegranate, tomato and chilli", "Increases fruit size, firmness and sugar formation"],
-      hi: ["भरपूर और जल्दी फूल आने में सहायक", "अंगूर, अनार, टमाटर, मिर्ची में फल सड़न व फटन कम करता है", "फल का आकार, कठोरता व शर्करा निर्माण बढ़ाता है"],
-      mr: ["भरपूर व लवकर फुलोरा येण्यास मदत", "द्राक्ष, डाळिंब, टोमॅटो, मिरचीतील फळकुज व फाटणे कमी करते", "फळांचा आकार, घट्टपणा व साखर निर्मिती वाढवते"],
+      en: [
+        "Promotes abundant and early flowering",
+        "Reduces fruit rot and cracking in grapes, pomegranate, tomato and chilli",
+        "Increases fruit size, firmness and sugar formation",
+      ],
+      hi: [
+        "भरपूर और जल्दी फूल आने में सहायक",
+        "अंगूर, अनार, टमाटर, मिर्ची में फल सड़न व फटन कम करता है",
+        "फल का आकार, कठोरता व शर्करा निर्माण बढ़ाता है",
+      ],
+      mr: [
+        "भरपूर व लवकर फुलोरा येण्यास मदत",
+        "द्राक्ष, डाळिंब, टोमॅटो, मिरचीतील फळकुज व फाटणे कमी करते",
+        "फळांचा आकार, घट्टपणा व साखर निर्मिती वाढवते",
+      ],
     },
-    crops: ["Grapes", "Pomegranate", "Tomato", "Chilli", "Fruits", "Vegetables", "All Crops"],
-    composition: "Micronutrient Mix Grade No.9 (as per FCO): Zn 3%, B 0.5% (EDTA Chelated). Typical Analysis: Zn 3%, B 2%, Ca 7%, MgO 3% (EDTA Chelated)",
+    crops: [
+      "Grapes",
+      "Pomegranate",
+      "Tomato",
+      "Chilli",
+      "Fruits",
+      "Vegetables",
+      "All Crops",
+    ],
+    composition:
+      "Micronutrient Mix Grade No.9 (as per FCO): Zn 3%, B 0.5% (EDTA Chelated). Typical Analysis: Zn 3%, B 2%, Ca 7%, MgO 3% (EDTA Chelated)",
     application: ["foliar", "drip"],
     dosage: {
       en: "Spraying: 1 g per litre of water. Drip irrigation: 500 g per acre.",
@@ -673,12 +1088,25 @@ export const PRODUCTS = [
       mr: "सिलिका ग्रो हे 3-इन-1 पॅक उत्पादन आहे — सिलिकॉनसोबत स्प्रेडर व वेटिंग एजंटचीही भूमिका. रस शोषणार्या कीटकांपासून संरक्षण, बुरशीजन्य व जीवाणूजन्य रोगांची तीव्रता कमी आणि प्रकाशसंश्लेषणात वाढ.",
     },
     benefits: {
-      en: ["Protects crops from sap-sucking insects", "Reduces severity of fungal and bacterial diseases", "Conserves water by reducing evaporation through stomata"],
-      hi: ["रस चूसने वाले कीटों से फसल की रक्षा", "फफूंदी व जीवाणु रोगों की तीव्रता घटाता है", "रंध्रों से वाष्पीकरण घटाकर पानी बचाता है"],
-      mr: ["रस शोषणार्या कीटकांपासून पिकांचे संरक्षण", "बुरशीजन्य व जीवाणूजन्य रोगांची तीव्रता कमी करते", "रंध्रांतून बाष्पीभवन कमी करून पाणी वाचवते"],
+      en: [
+        "Protects crops from sap-sucking insects",
+        "Reduces severity of fungal and bacterial diseases",
+        "Conserves water by reducing evaporation through stomata",
+      ],
+      hi: [
+        "रस चूसने वाले कीटों से फसल की रक्षा",
+        "फफूंदी व जीवाणु रोगों की तीव्रता घटाता है",
+        "रंध्रों से वाष्पीकरण घटाकर पानी बचाता है",
+      ],
+      mr: [
+        "रस शोषणार्या कीटकांपासून पिकांचे संरक्षण",
+        "बुरशीजन्य व जीवाणूजन्य रोगांची तीव्रता कमी करते",
+        "रंध्रांतून बाष्पीभवन कमी करून पाणी वाचवते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Silicon (SiO2) 85% min, Wetting & Spreading Agent, Other ingredients",
+    composition:
+      "Silicon (SiO2) 85% min, Wetting & Spreading Agent, Other ingredients",
     application: ["foliar", "soil"],
     dosage: {
       en: "Foliar spray: 1.5–2 g per litre of water (dissolve half an hour before spraying, stir frequently). Soil application: 2.0–5.0 kg per acre as per requirement.",
@@ -703,12 +1131,25 @@ export const PRODUCTS = [
       mr: "रूट स्टार 98 W.S.P. हे ह्यूमिक आम्लाचे फॉर्म्युलेटेड क्षार आहे — पोटॅशियमयुक्त पाण्यात विरघळणारे पावडर. मातीचे भौतिक, रासायनिक व जैविक गुणधर्म सुधारते व पांढऱ्या मुळांची वाढ वाढवते.",
     },
     benefits: {
-      en: ["Improves physical, chemical and biological soil properties", "Helps improve white root development", "Suitable from seed treatment to foliar spray"],
-      hi: ["मिट्टी के भौतिक, रासायनिक व जैविक गुण सुधारता है", "सफेद जड़ों का विकास बढ़ाता है", "बीज उपचार से छिड़काव तक उपयोगी"],
-      mr: ["मातीचे भौतिक, रासायनिक व जैविक गुणधर्म सुधारते", "पांढऱ्या मुळांची वाढ वाढवते", "बियाणे उपचारापासून फवारणीपर्यंत उपयुक्त"],
+      en: [
+        "Improves physical, chemical and biological soil properties",
+        "Helps improve white root development",
+        "Suitable from seed treatment to foliar spray",
+      ],
+      hi: [
+        "मिट्टी के भौतिक, रासायनिक व जैविक गुण सुधारता है",
+        "सफेद जड़ों का विकास बढ़ाता है",
+        "बीज उपचार से छिड़काव तक उपयोगी",
+      ],
+      mr: [
+        "मातीचे भौतिक, रासायनिक व जैविक गुणधर्म सुधारते",
+        "पांढऱ्या मुळांची वाढ वाढवते",
+        "बियाणे उपचारापासून फवारणीपर्यंत उपयुक्त",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Humic Acid 6%, Seaweed 4%, Amino Acid 5%, Filler 85% — Total 100%",
+    composition:
+      "Humic Acid 6%, Seaweed 4%, Amino Acid 5%, Filler 85% — Total 100%",
     application: ["seed", "drip", "soil", "foliar"],
     dosage: {
       en: "Seed treatment: vegetable seeds 10 g/10 L water, grain seeds 15 g/10 L. Root dipping: 10 g/10 L. Drip (fruit crops): 500 g/acre. Soil drenching: 500 g/10 L. Foliar spray: 3 g/10 L.",
@@ -733,12 +1174,25 @@ export const PRODUCTS = [
       mr: "पिक-अप हे 6% ह्यूमिक आम्ल, मूळवाढ माध्यम व अमीनो आम्ले युक्त वनस्पती बायो-स्टिम्युलंट आहे. उत्पादन घटक वाढवते, चयापचय क्रिया वेगवान करते आणि मातीचा पोत व कॅटायन विनिमय क्षमता सुधारते.",
     },
     benefits: {
-      en: ["Increases branches, buds, flowers and grain weight", "Enhances nutrient uptake and prevents leaching", "Improves soil texture and porosity"],
-      hi: ["शाखाएँ, कलियाँ, फूल व दाना वज़न बढ़ाता है", "पोषक अवशोषण बढ़ाकर निकासी रोकता है", "मिट्टी की बनावट व रंध्रता सुधारता है"],
-      mr: ["फांद्या, कळ्या, फुले व दाण्यांचे वजन वाढवते", "अन्नद्रव्य शोषण वाढवून निस्यंदन रोखते", "मातीचा पोत व रंध्रता सुधारते"],
+      en: [
+        "Increases branches, buds, flowers and grain weight",
+        "Enhances nutrient uptake and prevents leaching",
+        "Improves soil texture and porosity",
+      ],
+      hi: [
+        "शाखाएँ, कलियाँ, फूल व दाना वज़न बढ़ाता है",
+        "पोषक अवशोषण बढ़ाकर निकासी रोकता है",
+        "मिट्टी की बनावट व रंध्रता सुधारता है",
+      ],
+      mr: [
+        "फांद्या, कळ्या, फुले व दाण्यांचे वजन वाढवते",
+        "अन्नद्रव्य शोषण वाढवून निस्यंदन रोखते",
+        "मातीचा पोत व रंध्रता सुधारते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Amino Acid 5%, Seaweed 4%, Humic Acid 6%, Filler 85% — Total 100%",
+    composition:
+      "Amino Acid 5%, Seaweed 4%, Humic Acid 6%, Filler 85% — Total 100%",
     application: ["soil"],
     dosage: {
       en: "5–10 kg per acre. Can be mixed with other fertilizers.",
@@ -763,14 +1217,30 @@ export const PRODUCTS = [
       mr: "सिली सुपर सिलिकॉन हे 60% सिलिकॉन संयुग असलेले उत्पादन आहे — बळकट व लवचिक पीक वाढीसाठी.",
     },
     benefits: {
-      en: ["Strengthens crop structure with silicon", "Supports stress resilience", "Complements the crop nutrition programme"],
-      hi: ["सिलिकॉन से फसल संरचना मजबूत करता है", "तनाव सहन क्षमता बढ़ाता है", "फसल पोषण कार्यक्रम का पूरक"],
-      mr: ["सिलिकॉनने पीक संरचना बळकट करते", "ताण सहनशक्ती वाढवते", "पीक पोषण कार्यक्रमाचा पूरक"],
+      en: [
+        "Strengthens crop structure with silicon",
+        "Supports stress resilience",
+        "Complements the crop nutrition programme",
+      ],
+      hi: [
+        "सिलिकॉन से फसल संरचना मजबूत करता है",
+        "तनाव सहन क्षमता बढ़ाता है",
+        "फसल पोषण कार्यक्रम का पूरक",
+      ],
+      mr: [
+        "सिलिकॉनने पीक संरचना बळकट करते",
+        "ताण सहनशक्ती वाढवते",
+        "पीक पोषण कार्यक्रमाचा पूरक",
+      ],
     },
     crops: ["All Crops"],
     composition: "Silicon Compound 60%, Other Compound 40% — Total 100%",
     application: ["soil"],
-    dosage: { en: "Information to be updated", hi: "जानकारी शीघ्र अपडेट की जाएगी", mr: "माहिती लवकरच अपडेट केली जाईल" },
+    dosage: {
+      en: "Information to be updated",
+      hi: "जानकारी शीघ्र अपडेट की जाएगी",
+      mr: "माहिती लवकरच अपडेट केली जाईल",
+    },
     packaging: ["Information to be updated"],
   },
   {
@@ -789,14 +1259,30 @@ export const PRODUCTS = [
       mr: "न्यूट्रस पोटाश हे शिऱ्यापासून बनवलेले पाण्यात विरघळणारे पोटॅशियम (K2O) किमान 14.5% आहे. केवळ कृषी वापरासाठी.",
     },
     benefits: {
-      en: ["Provides readily available potassium", "Molasses-derived and water soluble", "Suitable for drip and fertigation systems"],
-      hi: ["तुरंत उपलब्ध पोटैशियम देता है", "शीरे से बना व जलघुलनशील", "ड्रिप व फर्टिगेशन के लिए उपयुक्त"],
-      mr: ["त्वरित उपलब्ध पोटॅशियम देते", "शिऱ्यापासून बनवलेले व पाण्यात विरघळणारे", "ठिबक व फर्टिगेशनसाठी योग्य"],
+      en: [
+        "Provides readily available potassium",
+        "Molasses-derived and water soluble",
+        "Suitable for drip and fertigation systems",
+      ],
+      hi: [
+        "तुरंत उपलब्ध पोटैशियम देता है",
+        "शीरे से बना व जलघुलनशील",
+        "ड्रिप व फर्टिगेशन के लिए उपयुक्त",
+      ],
+      mr: [
+        "त्वरित उपलब्ध पोटॅशियम देते",
+        "शिऱ्यापासून बनवलेले व पाण्यात विरघळणारे",
+        "ठिबक व फर्टिगेशनसाठी योग्य",
+      ],
     },
     crops: ["All Crops"],
     composition: "Water Soluble Potassium (as K2O), min. 14.5%",
     application: ["drip", "soil"],
-    dosage: { en: "Information to be updated", hi: "जानकारी शीघ्र अपडेट की जाएगी", mr: "माहिती लवकरच अपडेट केली जाईल" },
+    dosage: {
+      en: "Information to be updated",
+      hi: "जानकारी शीघ्र अपडेट की जाएगी",
+      mr: "माहिती लवकरच अपडेट केली जाईल",
+    },
     packaging: ["Net Wt. 2.5 kg"],
   },
   {
@@ -815,11 +1301,36 @@ export const PRODUCTS = [
       mr: "न्यूट्रीलाइट हे सर्व भाजीपाला, फळे व इतर पिकांसाठी — टोमॅटो, शिमला मिरची, द्राक्षे, डाळिंब, ऊस, कापूस, गहू, भात, तेलबिया व फुले — सूक्ष्म अन्नद्रव्य मिश्रण आहे.",
     },
     benefits: {
-      en: ["Balanced six-micronutrient supply", "One product across vegetables, fruits and field crops", "Simple per-acre dosing"],
-      hi: ["छह सूक्ष्म पोषकों की संतुलित आपूर्ति", "सब्ज़ी, फल व खेत फसलों के लिए एक ही उत्पाद", "सरल प्रति-एकड़ मात्रा"],
-      mr: ["सहा सूक्ष्म अन्नद्रव्यांचा संतुलित पुरवठा", "भाजीपाला, फळे व रब्बी-खरीप पिकांसाठी एकच उत्पादन", "सोपी प्रति-एकर मात्रा"],
+      en: [
+        "Balanced six-micronutrient supply",
+        "One product across vegetables, fruits and field crops",
+        "Simple per-acre dosing",
+      ],
+      hi: [
+        "छह सूक्ष्म पोषकों की संतुलित आपूर्ति",
+        "सब्ज़ी, फल व खेत फसलों के लिए एक ही उत्पाद",
+        "सरल प्रति-एकड़ मात्रा",
+      ],
+      mr: [
+        "सहा सूक्ष्म अन्नद्रव्यांचा संतुलित पुरवठा",
+        "भाजीपाला, फळे व रब्बी-खरीप पिकांसाठी एकच उत्पादन",
+        "सोपी प्रति-एकर मात्रा",
+      ],
     },
-    crops: ["Tomato", "Capsicum", "Grapes", "Pomegranate", "Sugarcane", "Cotton", "Wheat", "Paddy", "Oilseeds", "Flowers", "Vegetables", "Fruits"],
+    crops: [
+      "Tomato",
+      "Capsicum",
+      "Grapes",
+      "Pomegranate",
+      "Sugarcane",
+      "Cotton",
+      "Wheat",
+      "Paddy",
+      "Oilseeds",
+      "Flowers",
+      "Vegetables",
+      "Fruits",
+    ],
     composition: "Zn 3%, Cu 1%, Fe 2.5%, Mn 1%, B 0.5%, Mo 0.1%",
     application: ["soil"],
     dosage: {
@@ -845,12 +1356,25 @@ export const PRODUCTS = [
       mr: "1350 हे जे. आर. ॲग्रोचे सूक्ष्म अन्नद्रव्य मिश्रण आहे — 1350 ग्रॅम प्रति एकर मात्रेत, 300–350 लिटर पाण्यासह फवारणीसाठी. अनेक सूक्ष्म अन्नद्रव्यांचा एक-पॅक उपाय.",
     },
     benefits: {
-      en: ["Five essential micronutrient salts in one pack", "Simple 1350 g per acre schedule", "Covers magnesium, zinc, iron, manganese and boron"],
-      hi: ["एक पैक में पाँच आवश्यक सूक्ष्म पोषक लवण", "सरल 1350 ग्राम प्रति एकड़ कार्यक्रम", "मैग्नीशियम, जिंक, आयरन, मैंगनीज व बोरॉन का समावेश"],
-      mr: ["एका पॅकमध्ये पाच आवश्यक सूक्ष्म अन्नद्रव्य क्षार", "सोपे 1350 ग्रॅम प्रति एकर कार्यक्रम", "मॅग्नेशियम, झिंक, लोह, मॅंगनीज व बोरॉन समाविष्ट"],
+      en: [
+        "Five essential micronutrient salts in one pack",
+        "Simple 1350 g per acre schedule",
+        "Covers magnesium, zinc, iron, manganese and boron",
+      ],
+      hi: [
+        "एक पैक में पाँच आवश्यक सूक्ष्म पोषक लवण",
+        "सरल 1350 ग्राम प्रति एकड़ कार्यक्रम",
+        "मैग्नीशियम, जिंक, आयरन, मैंगनीज व बोरॉन का समावेश",
+      ],
+      mr: [
+        "एका पॅकमध्ये पाच आवश्यक सूक्ष्म अन्नद्रव्य क्षार",
+        "सोपे 1350 ग्रॅम प्रति एकर कार्यक्रम",
+        "मॅग्नेशियम, झिंक, लोह, मॅंगनीज व बोरॉन समाविष्ट",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Magnesium Sulphate 550 g, Zinc Sulphate 250 g, Ferrous Sulphate 250 g, Manganese Sulphate 200 g, Boric Acid 100 g",
+    composition:
+      "Magnesium Sulphate 550 g, Zinc Sulphate 250 g, Ferrous Sulphate 250 g, Manganese Sulphate 200 g, Boric Acid 100 g",
     application: ["foliar"],
     dosage: {
       en: "1350 grams per acre, to be given in 300–350 litres of water.",
@@ -875,14 +1399,31 @@ export const PRODUCTS = [
       mr: "न्यूट्रस प्रॉम हे कणिक स्वरूपातील फॉस्फेटयुक्त सेंद्रिय खत आहे — सेंद्रिय शेतीसाठी योग्य, किमान 10.40% एकूण फॉस्फेट (P2O5) व सेंद्रिय कार्बनयुक्त.",
     },
     benefits: {
-      en: ["Phosphate rich organic manure", "Suitable for organic farming", "Adds organic carbon to the soil"],
-      hi: ["फॉस्फेट से समृद्ध जैविक खाद", "जैविक खेती के लिए उपयुक्त", "मिट्टी में कार्बनिक कार्बन बढ़ाता है"],
-      mr: ["फॉस्फेटयुक्त सेंद्रिय खत", "सेंद्रिय शेतीसाठी योग्य", "मातीत सेंद्रिय कार्बन वाढवते"],
+      en: [
+        "Phosphate rich organic manure",
+        "Suitable for organic farming",
+        "Adds organic carbon to the soil",
+      ],
+      hi: [
+        "फॉस्फेट से समृद्ध जैविक खाद",
+        "जैविक खेती के लिए उपयुक्त",
+        "मिट्टी में कार्बनिक कार्बन बढ़ाता है",
+      ],
+      mr: [
+        "फॉस्फेटयुक्त सेंद्रिय खत",
+        "सेंद्रिय शेतीसाठी योग्य",
+        "मातीत सेंद्रिय कार्बन वाढवते",
+      ],
     },
     crops: ["All Crops"],
-    composition: "Total Nitrogen as N 0.40% min, Total Phosphate as P2O5 10.40% min, Total Organic Carbon 7–8% min (by wt.), C:N Ratio <20:1, Moisture 25% max",
+    composition:
+      "Total Nitrogen as N 0.40% min, Total Phosphate as P2O5 10.40% min, Total Organic Carbon 7–8% min (by wt.), C:N Ratio <20:1, Moisture 25% max",
     application: ["soil"],
-    dosage: { en: "Information to be updated", hi: "जानकारी शीघ्र अपडेट की जाएगी", mr: "माहिती लवकरच अपडेट केली जाईल" },
+    dosage: {
+      en: "Information to be updated",
+      hi: "जानकारी शीघ्र अपडेट की जाएगी",
+      mr: "माहिती लवकरच अपडेट केली जाईल",
+    },
     packaging: ["Granular pack"],
   },
   {
@@ -901,12 +1442,25 @@ export const PRODUCTS = [
       mr: "शुगर स्पेशल ऊसाच्या गांठांची लांबी वाढवते, अन्नद्रव्य व सूक्ष्म अन्नद्रव्यांची कमतरता भरते, ऊस हिरवा ठेवते आणि भुस्सा (बगासा) कमी करून साखर प्रमाण 25–30% वाढवते.",
     },
     benefits: {
-      en: ["Increases length of sugarcane internodes", "Keeps cane green and promotes vigorous growth", "Decreases bagasse and increases sugar content by 25–30%"],
-      hi: ["गन्ने की गांठों की लंबाई बढ़ाता है", "गन्ने को हरा रखकर जोरदार वृद्धि देता है", "बगास घटाकर चीनी मात्रा 25–30% बढ़ाता है"],
-      mr: ["ऊसाच्या गांठांची लांबी वाढवते", "ऊस हिरवा ठेवून जोरदार वाढ देते", "बगासा कमी करून साखर प्रमाण 25–30% वाढवते"],
+      en: [
+        "Increases length of sugarcane internodes",
+        "Keeps cane green and promotes vigorous growth",
+        "Decreases bagasse and increases sugar content by 25–30%",
+      ],
+      hi: [
+        "गन्ने की गांठों की लंबाई बढ़ाता है",
+        "गन्ने को हरा रखकर जोरदार वृद्धि देता है",
+        "बगास घटाकर चीनी मात्रा 25–30% बढ़ाता है",
+      ],
+      mr: [
+        "ऊसाच्या गांठांची लांबी वाढवते",
+        "ऊस हिरवा ठेवून जोरदार वाढ देते",
+        "बगासा कमी करून साखर प्रमाण 25–30% वाढवते",
+      ],
     },
     crops: ["Sugarcane"],
-    composition: "Amino Acid 15%, Seaweed Extract 7%, Other Ingredients 78% — Total 100%",
+    composition:
+      "Amino Acid 15%, Seaweed Extract 7%, Other Ingredients 78% — Total 100%",
     application: ["foliar"],
     dosage: {
       en: "First spray 25–30 days after sugarcane emergence at 2 ml per litre of water; second spray 50–60 days after emergence at 2 ml per litre.",
