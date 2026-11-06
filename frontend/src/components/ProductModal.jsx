@@ -54,7 +54,7 @@ export default function ProductModal({ product, onClose }) {
 
             <div className="grid md:grid-cols-[320px_1fr]">
               <div className="relative flex items-center justify-center bg-gradient-to-b from-[#FFFFFF] to-white p-8">
-                <img src={product.image} alt={`${product.name} pack — JR Agro Chemicals`} className="max-h-72 object-contain drop-shadow-xl" />
+                <img src={product.image} alt={`${product.name} pack — JR Agro Chemicals`} className="max-h-80 object-contain drop-shadow-xl" />
                 <span className="absolute left-4 top-4 rounded-full bg-[#0A2F24] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#F5B301]">
                   {tx(CATEGORIES.find((c) => c.id === product.category)?.name)}
                 </span>
